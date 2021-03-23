@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/melhemdirani/Melhem.git/static/css/main.ae085d1e.chunk.css",
-    "main.js": "/melhemdirani/Melhem.git/static/js/main.b2006e4f.chunk.js",
-    "main.js.map": "/melhemdirani/Melhem.git/static/js/main.b2006e4f.chunk.js.map",
-    "runtime-main.js": "/melhemdirani/Melhem.git/static/js/runtime-main.036f262e.js",
-    "runtime-main.js.map": "/melhemdirani/Melhem.git/static/js/runtime-main.036f262e.js.map",
-    "static/css/2.fe359a49.chunk.css": "/melhemdirani/Melhem.git/static/css/2.fe359a49.chunk.css",
-    "static/js/2.8357f46b.chunk.js": "/melhemdirani/Melhem.git/static/js/2.8357f46b.chunk.js",
-    "static/js/2.8357f46b.chunk.js.map": "/melhemdirani/Melhem.git/static/js/2.8357f46b.chunk.js.map",
-    "static/js/3.d5eb95bb.chunk.js": "/melhemdirani/Melhem.git/static/js/3.d5eb95bb.chunk.js",
-    "static/js/3.d5eb95bb.chunk.js.map": "/melhemdirani/Melhem.git/static/js/3.d5eb95bb.chunk.js.map",
-    "index.html": "/melhemdirani/Melhem.git/index.html",
-    "static/css/2.fe359a49.chunk.css.map": "/melhemdirani/Melhem.git/static/css/2.fe359a49.chunk.css.map",
-    "static/css/main.ae085d1e.chunk.css.map": "/melhemdirani/Melhem.git/static/css/main.ae085d1e.chunk.css.map",
-    "static/js/2.8357f46b.chunk.js.LICENSE.txt": "/melhemdirani/Melhem.git/static/js/2.8357f46b.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/melhemdirani/Melhem.git/static/media/ProfilePic.fc701b41.png",
-    "static/media/Comingsoon.2818d9d3.png": "/melhemdirani/Melhem.git/static/media/Comingsoon.2818d9d3.png"
+    "main.css": "/Melhem/static/css/main.539786ad.chunk.css",
+    "main.js": "/Melhem/static/js/main.b2006e4f.chunk.js",
+    "main.js.map": "/Melhem/static/js/main.b2006e4f.chunk.js.map",
+    "runtime-main.js": "/Melhem/static/js/runtime-main.29dc5cdc.js",
+    "runtime-main.js.map": "/Melhem/static/js/runtime-main.29dc5cdc.js.map",
+    "static/css/2.fe359a49.chunk.css": "/Melhem/static/css/2.fe359a49.chunk.css",
+    "static/js/2.8357f46b.chunk.js": "/Melhem/static/js/2.8357f46b.chunk.js",
+    "static/js/2.8357f46b.chunk.js.map": "/Melhem/static/js/2.8357f46b.chunk.js.map",
+    "static/js/3.d5eb95bb.chunk.js": "/Melhem/static/js/3.d5eb95bb.chunk.js",
+    "static/js/3.d5eb95bb.chunk.js.map": "/Melhem/static/js/3.d5eb95bb.chunk.js.map",
+    "index.html": "/Melhem/index.html",
+    "static/css/2.fe359a49.chunk.css.map": "/Melhem/static/css/2.fe359a49.chunk.css.map",
+    "static/css/main.539786ad.chunk.css.map": "/Melhem/static/css/main.539786ad.chunk.css.map",
+    "static/js/2.8357f46b.chunk.js.LICENSE.txt": "/Melhem/static/js/2.8357f46b.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Melhem/static/media/ProfilePic.fc701b41.png",
+    "static/media/Comingsoon.2818d9d3.png": "/Melhem/static/media/Comingsoon.2818d9d3.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.036f262e.js",
+    "static/js/runtime-main.29dc5cdc.js",
     "static/css/2.fe359a49.chunk.css",
     "static/js/2.8357f46b.chunk.js",
-    "static/css/main.ae085d1e.chunk.css",
+    "static/css/main.539786ad.chunk.css",
     "static/js/main.b2006e4f.chunk.js"
   ]
 }
