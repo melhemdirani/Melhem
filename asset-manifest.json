@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Melhem/static/css/main.974594d6.chunk.css",
-    "main.js": "/Melhem/static/js/main.24d089dd.chunk.js",
-    "main.js.map": "/Melhem/static/js/main.24d089dd.chunk.js.map",
+    "main.css": "/Melhem/static/css/main.78e3076e.chunk.css",
+    "main.js": "/Melhem/static/js/main.ef1711c6.chunk.js",
+    "main.js.map": "/Melhem/static/js/main.ef1711c6.chunk.js.map",
     "runtime-main.js": "/Melhem/static/js/runtime-main.1b7c59e6.js",
     "runtime-main.js.map": "/Melhem/static/js/runtime-main.1b7c59e6.js.map",
     "static/js/2.c6919ddb.chunk.js": "/Melhem/static/js/2.c6919ddb.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.052e1d3b.chunk.js": "/Melhem/static/js/3.052e1d3b.chunk.js",
     "static/js/3.052e1d3b.chunk.js.map": "/Melhem/static/js/3.052e1d3b.chunk.js.map",
     "index.html": "/Melhem/index.html",
-    "static/css/main.974594d6.chunk.css.map": "/Melhem/static/css/main.974594d6.chunk.css.map",
+    "static/css/main.78e3076e.chunk.css.map": "/Melhem/static/css/main.78e3076e.chunk.css.map",
     "static/js/2.c6919ddb.chunk.js.LICENSE.txt": "/Melhem/static/js/2.c6919ddb.chunk.js.LICENSE.txt",
     "static/media/Linkedin.b59c914c.jpg": "/Melhem/static/media/Linkedin.b59c914c.jpg",
     "static/media/ProfilePic.fc701b41.png": "/Melhem/static/media/ProfilePic.fc701b41.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.1b7c59e6.js",
     "static/js/2.c6919ddb.chunk.js",
-    "static/css/main.974594d6.chunk.css",
-    "static/js/main.24d089dd.chunk.js"
+    "static/css/main.78e3076e.chunk.css",
+    "static/js/main.ef1711c6.chunk.js"
   ]
 }
