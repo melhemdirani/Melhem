@@ -1,27 +1,26 @@
 {
   "files": {
-    "main.css": "/Melhem/static/css/main.c8664ac6.chunk.css",
-    "main.js": "/Melhem/static/js/main.c4522d08.chunk.js",
-    "main.js.map": "/Melhem/static/js/main.c4522d08.chunk.js.map",
-    "runtime-main.js": "/Melhem/static/js/runtime-main.29dc5cdc.js",
-    "runtime-main.js.map": "/Melhem/static/js/runtime-main.29dc5cdc.js.map",
-    "static/css/2.fe359a49.chunk.css": "/Melhem/static/css/2.fe359a49.chunk.css",
-    "static/js/2.8357f46b.chunk.js": "/Melhem/static/js/2.8357f46b.chunk.js",
-    "static/js/2.8357f46b.chunk.js.map": "/Melhem/static/js/2.8357f46b.chunk.js.map",
-    "static/js/3.d5eb95bb.chunk.js": "/Melhem/static/js/3.d5eb95bb.chunk.js",
-    "static/js/3.d5eb95bb.chunk.js.map": "/Melhem/static/js/3.d5eb95bb.chunk.js.map",
+    "main.css": "/Melhem/static/css/main.974594d6.chunk.css",
+    "main.js": "/Melhem/static/js/main.24d089dd.chunk.js",
+    "main.js.map": "/Melhem/static/js/main.24d089dd.chunk.js.map",
+    "runtime-main.js": "/Melhem/static/js/runtime-main.1b7c59e6.js",
+    "runtime-main.js.map": "/Melhem/static/js/runtime-main.1b7c59e6.js.map",
+    "static/js/2.c6919ddb.chunk.js": "/Melhem/static/js/2.c6919ddb.chunk.js",
+    "static/js/2.c6919ddb.chunk.js.map": "/Melhem/static/js/2.c6919ddb.chunk.js.map",
+    "static/js/3.052e1d3b.chunk.js": "/Melhem/static/js/3.052e1d3b.chunk.js",
+    "static/js/3.052e1d3b.chunk.js.map": "/Melhem/static/js/3.052e1d3b.chunk.js.map",
     "index.html": "/Melhem/index.html",
-    "static/css/2.fe359a49.chunk.css.map": "/Melhem/static/css/2.fe359a49.chunk.css.map",
-    "static/css/main.c8664ac6.chunk.css.map": "/Melhem/static/css/main.c8664ac6.chunk.css.map",
-    "static/js/2.8357f46b.chunk.js.LICENSE.txt": "/Melhem/static/js/2.8357f46b.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/Melhem/static/media/ProfilePic.fc701b41.png",
-    "static/media/Comingsoon.2818d9d3.png": "/Melhem/static/media/Comingsoon.2818d9d3.png"
+    "static/css/main.974594d6.chunk.css.map": "/Melhem/static/css/main.974594d6.chunk.css.map",
+    "static/js/2.c6919ddb.chunk.js.LICENSE.txt": "/Melhem/static/js/2.c6919ddb.chunk.js.LICENSE.txt",
+    "static/media/Linkedin.b59c914c.jpg": "/Melhem/static/media/Linkedin.b59c914c.jpg",
+    "static/media/ProfilePic.fc701b41.png": "/Melhem/static/media/ProfilePic.fc701b41.png",
+    "static/media/Smartbrain.f86e029e.jpg": "/Melhem/static/media/Smartbrain.f86e029e.jpg",
+    "static/media/robofriends.181704c9.jpg": "/Melhem/static/media/robofriends.181704c9.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.29dc5cdc.js",
-    "static/css/2.fe359a49.chunk.css",
-    "static/js/2.8357f46b.chunk.js",
-    "static/css/main.c8664ac6.chunk.css",
-    "static/js/main.c4522d08.chunk.js"
+    "static/js/runtime-main.1b7c59e6.js",
+    "static/js/2.c6919ddb.chunk.js",
+    "static/css/main.974594d6.chunk.css",
+    "static/js/main.24d089dd.chunk.js"
   ]
 }
