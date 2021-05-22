@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Melhem/static/css/main.2dcd9dbf.chunk.css",
+    "main.css": "/Melhem/static/css/main.deb91a72.chunk.css",
     "main.js": "/Melhem/static/js/main.daa9c851.chunk.js",
     "main.js.map": "/Melhem/static/js/main.daa9c851.chunk.js.map",
     "runtime-main.js": "/Melhem/static/js/runtime-main.efdc7eb7.js",
@@ -10,7 +10,7 @@
     "static/js/3.8025e41b.chunk.js": "/Melhem/static/js/3.8025e41b.chunk.js",
     "static/js/3.8025e41b.chunk.js.map": "/Melhem/static/js/3.8025e41b.chunk.js.map",
     "index.html": "/Melhem/index.html",
-    "static/css/main.2dcd9dbf.chunk.css.map": "/Melhem/static/css/main.2dcd9dbf.chunk.css.map",
+    "static/css/main.deb91a72.chunk.css.map": "/Melhem/static/css/main.deb91a72.chunk.css.map",
     "static/js/2.fa32db1a.chunk.js.LICENSE.txt": "/Melhem/static/js/2.fa32db1a.chunk.js.LICENSE.txt",
     "static/media/Adventure.3a0951b7.png": "/Melhem/static/media/Adventure.3a0951b7.png",
     "static/media/App.css": "/Melhem/static/media/CV.cc395ae1.jpg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.efdc7eb7.js",
     "static/js/2.fa32db1a.chunk.js",
-    "static/css/main.2dcd9dbf.chunk.css",
+    "static/css/main.deb91a72.chunk.css",
     "static/js/main.daa9c851.chunk.js"
   ]
 }
