@@ -1,10 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@media only screen and (max-width: 750px) {
+    .Cv_button{
+        margin-right: 50px;
+        margin-top: 40px;
+        z-index: 999;
 
-.bitch{
-    color: yellow;
-    font-size: 200px;
-    z-index: 1;
+    }
+    .Resume{
+        width: 900px
+    }
 }
+.Cv{
+    display: flex;
+    flex-direction: column;
+}   
+.Resume{
+    display: flex;
+    justify-content: flex-end;
+    background-image: url('./Components/CV.jpg');
+    background-size: 100% auto;
+    height: 1000px;
+    width: 750px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.Cv_button{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    color: green;
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    width: 90px;
+    margin-left: 650px;
+}
+.button2{
+    font-size: 1.1em;   
+    background-color: teal;
+    border: solid 4px teal;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.button2:hover{
+transform: scale(.9);
+}
+.Cv_button:hover{
+    color: rgba(71, 71, 71, 1)
+}
+
 .App{
     font-family: 'Poppins', sans-serif;
 }
@@ -13,7 +59,6 @@
     flex-direction: column;
     margin-bottom: -21px;  
 }
-
 .header1{
     font-size: .9em;
 }
