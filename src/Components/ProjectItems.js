@@ -5,8 +5,8 @@ import { Grid } from '@material-ui/core';
 function ProjectItems({image,projectName,link,link2, description}) {
     const [screen, setScreen] = useState(true);
     const showScreen = () => {
-        if (window.innerWidth <= 980) {
-            setScreen(true);
+            if (window.innerWidth <= 980) {
+                setScreen(true);
         } else {
           setScreen(false);
         }

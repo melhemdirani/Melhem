@@ -6,7 +6,7 @@
         width: 200px;
         text-align: justify;
     }
-    .link1{
+    .link1, .link2{
         padding: 1px;
     }
 }
@@ -55,8 +55,16 @@
         margin-left: -25px;
     }
     .button2{
-        font-size: .8em; 
-       
+        font-size: .8em;     
+    }
+    .profilepic{
+        height: 300px;
+        width: auto;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .profilepic{
+        height:240px
     }
 }
 @media only screen and (max-width: 600px) {
@@ -214,5 +222,14 @@
     .button2{
         margin-left: -15px;
        
+    }
+}
+@media only screen and (max-width: 300px) {
+    .text2{
+        width: 140px;
+    }
+    .profilepic{
+        height: 120px;
+        margin-top: -20px;
     }
 }
