@@ -8,6 +8,7 @@ function Contact() {
                 </div>
         <div >
             <p className="footertxt"> Interested in working together? <br/><a href="mailto:melhemdirani@hotmail.com" className="click"> click here </a></p>
+
         </div>     
     </div>
     )

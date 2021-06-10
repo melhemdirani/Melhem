@@ -6,8 +6,9 @@ import Footer from './Components/Footer';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import About from './Components/About';
-import Cv from './Components/Cv';
-
+import Resume from './Components/Resume';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import Scroll from './Components/Scroll';
 
 class App extends Component {
   constructor() {
@@ -16,23 +17,25 @@ class App extends Component {
       route: 'home'
       }
     }
-  onRouteChange = (route) => {
-    this.setState({route: route});
-  }
   render() {
-    const {route} = this.state;
     return (
+      <Router>
+        <Scroll/>
       <div className="App">
-        { route === 'Cv' ?
-          <Cv onRouteChange={this.onRouteChange}/> : (
-          <div className="App">
-            <Header/>
-            <About onRouteChange={this.onRouteChange} />
-            <Projects />
-            <Contact />
-            <Footer />
-          </div>)}
+        <Switch>
+        <Route exact path='/'>
+          <Header/>
+          <About />
+          <Projects />
+          <Contact />
+          <Footer />
+        </Route>
+        <Route exact path='/resume'>
+          <Resume/>
+        </Route>
+        </Switch>
       </div>
+      </Router>
     );
   }
 }

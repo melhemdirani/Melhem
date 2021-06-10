@@ -1,9 +1,9 @@
 import React from 'react'
 import ProjectItems from './ProjectItems'
-import robofriends from './robofriends.jpg'
-import Linkedin from './Linkedin.png'
-import Smartbrain from './Smartbrain.jpg'
-import Adventure from './Adventure.png'
+import robofriends from '../images/robofriends.jpg'
+import Linkedin from '../images/Linkedin.png'
+import Smartbrain from '../images/Smartbrain.jpg'
+import Adventure from '../images/Adventure.png'
 import { Grid } from '@material-ui/core';
 import '../Hidden.css';  
 
@@ -19,7 +19,7 @@ function Projects() {
                     projectName="Visit Lebanon"
                     link="https://melhemdirani.github.io/Visit-Lebanon"
                     link2="https://github.com/melhemdirani/visit-lebanon"
-                    description="A travel company that is promoting touristic places in Lebanon. Built using React.js and npm"
+                    description="A demo website of a travel company that is promoting touristic places in Lebanon. Built using React.js and npm"
                     />
                 </Grid>
                 <br/>
