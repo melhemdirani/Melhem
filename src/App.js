@@ -23,7 +23,7 @@ class App extends Component {
         <Scroll/>
       <div className="App">
         <Switch>
-        <Route exact path='/'>
+        <Route exact path='/Melhem'>
           <Header/>
           <About />
           <Projects />
