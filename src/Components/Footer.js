@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        backgroundColor: "#434343",
+        backgroundColor: "rgb(0,128,128)",
     },
     icon:{
         height: "30px",
