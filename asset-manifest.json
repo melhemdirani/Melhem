@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Melhem/static/css/main.47222965.chunk.css",
-    "main.js": "/Melhem/static/js/main.179c50b1.chunk.js",
-    "main.js.map": "/Melhem/static/js/main.179c50b1.chunk.js.map",
-    "runtime-main.js": "/Melhem/static/js/runtime-main.574645cd.js",
-    "runtime-main.js.map": "/Melhem/static/js/runtime-main.574645cd.js.map",
-    "static/js/2.6444c3a7.chunk.js": "/Melhem/static/js/2.6444c3a7.chunk.js",
-    "static/js/2.6444c3a7.chunk.js.map": "/Melhem/static/js/2.6444c3a7.chunk.js.map",
-    "static/js/3.7b89e0a6.chunk.js": "/Melhem/static/js/3.7b89e0a6.chunk.js",
-    "static/js/3.7b89e0a6.chunk.js.map": "/Melhem/static/js/3.7b89e0a6.chunk.js.map",
+    "main.css": "/Melhem/static/css/main.1065c174.chunk.css",
+    "main.js": "/Melhem/static/js/main.61a040bf.chunk.js",
+    "main.js.map": "/Melhem/static/js/main.61a040bf.chunk.js.map",
+    "runtime-main.js": "/Melhem/static/js/runtime-main.d4c97d2c.js",
+    "runtime-main.js.map": "/Melhem/static/js/runtime-main.d4c97d2c.js.map",
+    "static/js/2.69df1d1a.chunk.js": "/Melhem/static/js/2.69df1d1a.chunk.js",
+    "static/js/2.69df1d1a.chunk.js.map": "/Melhem/static/js/2.69df1d1a.chunk.js.map",
+    "static/js/3.ddb21476.chunk.js": "/Melhem/static/js/3.ddb21476.chunk.js",
+    "static/js/3.ddb21476.chunk.js.map": "/Melhem/static/js/3.ddb21476.chunk.js.map",
     "index.html": "/Melhem/index.html",
-    "static/css/main.47222965.chunk.css.map": "/Melhem/static/css/main.47222965.chunk.css.map",
-    "static/js/2.6444c3a7.chunk.js.LICENSE.txt": "/Melhem/static/js/2.6444c3a7.chunk.js.LICENSE.txt",
+    "static/css/main.1065c174.chunk.css.map": "/Melhem/static/css/main.1065c174.chunk.css.map",
+    "static/js/2.69df1d1a.chunk.js.LICENSE.txt": "/Melhem/static/js/2.69df1d1a.chunk.js.LICENSE.txt",
     "static/media/Adventure.3a0951b7.png": "/Melhem/static/media/Adventure.3a0951b7.png",
     "static/media/Linkedin.7fd9be2c.png": "/Melhem/static/media/Linkedin.7fd9be2c.png",
     "static/media/ProfilePic.fc701b41.png": "/Melhem/static/media/ProfilePic.fc701b41.png",
@@ -20,9 +20,9 @@
     "static/media/robofriends.181704c9.jpg": "/Melhem/static/media/robofriends.181704c9.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.574645cd.js",
-    "static/js/2.6444c3a7.chunk.js",
-    "static/css/main.47222965.chunk.css",
-    "static/js/main.179c50b1.chunk.js"
+    "static/js/runtime-main.d4c97d2c.js",
+    "static/js/2.69df1d1a.chunk.js",
+    "static/css/main.1065c174.chunk.css",
+    "static/js/main.61a040bf.chunk.js"
   ]
 }
