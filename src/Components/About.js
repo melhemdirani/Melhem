@@ -1,27 +1,107 @@
-import React from 'react';
+import React  from 'react';
 import ProfilePic from '../images/ProfilePic.png';
-import { Grid } from '@material-ui/core';
-import '../Hidden.css';  
-import { Link } from 'react-router-dom';
+import { makeStyles } from "@material-ui/core";
 
-function About() {
 
-    return (
-        <div>
-            <Grid container className="about" id="about" justify="center" alignItems="center">
-                <Grid item xs={4}>
-                    <img className="profilepic" src={ProfilePic} alt="Melhem" />
-                </Grid>
-                <Grid item xs={6}  className="aboutme">  
-                    <h1 className="text1" >About me</h1>
-                    <p className="text2">I found my passion in web development in the middle of the 2020 pandemic, quitted my teaching job and dived in the IT field</p>  
-                    <p className="text2">Innovative Front End Developer with experience in building and maintaining responsive websites. Proficient in HTML, CSS, JavaScript and React; plus modern libraries and frameworks. </p>
-                   <Link to='/resume'><button className="button2" > My Resume </button></Link> 
-                </Grid>
-            </Grid>  
 
+const useStyles = makeStyles((theme) => ({
+    about: {
+      height: '80vh' ,
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      columnGap: '70px',
+      padding: '60px',
+
+    },
+    profilepic: {
+        height: '400px',
+        width: 'auto',
+
+    },
+    aboutme: {
+        textAlign: 'justify',
+        width: "900px"
+    },
+    text1: {
+        fontSize: '40px',
+    },
+    text2: {
+        fontSize: '25px'
+    },
+  
+    [theme.breakpoints.down('1030')]:{
+      
+        text1: {
+            fontSize: '30px'
+        },
+        text2: {
+            fontSize: '15px',
+        },
+        profilepic: {
+            height: '300px',
+        },
+        about: {
+            columnGap: '40px',
+            height: '30vh' ,
+        },
+    },
+    [theme.breakpoints.down('xs')]: {
+        profilepic: {
+            height: '150px',
+        },
+        text1: {
+            fontSize: '20px',
+            width: "150px"
+        },
+        text2: {
+            fontSize: '10px',
+        },
+        button: {
+            marginTop: "200px"
+        }, 
+        aboutme: {
+            width: "200px"
+        },
+        about:{
+            padding: "40px",
+            columnGap: '20px',
+            height: '40vh' ,
+        }
+    },
+    [theme.breakpoints.down('340')]:{
+        text1: {
+            fontSize: '15px',
+        },
+        text2: {
+            fontSize: '8px',
+            width: "145px"
+        },
+        profilepic: {
+            height: "120px"
+        },
+      
+        about: {
+            columnGap: '20px',
+            paddingRight: "30px",
             
-        </div>         
+        },
+    }
+}))
+function About({Button}) {
+
+    const { about,profilepic,aboutme,text1,text2, button} = useStyles()
+    return (
+ 
+        <div className={about} id="about">
+            <img className={profilepic} src={ProfilePic} alt="Melhem" />
+            <div  className={aboutme}>  
+                <h1 className={text1} >ABOUT ME</h1>
+                <p className={text2}>I found my passion in web development in the middle of the 2020 pandemic, quitted my teaching job and dived into the IT field.</p>  
+                <p className={text2}>Innovative Front End Developer with experience in building and maintaining responsive websites. Proficient in HTML, CSS, JavaScript and React; plus modern libraries and frameworks. </p>
+                <Button className={button} />
+            </div>
+        </div> 
     )
 }
 

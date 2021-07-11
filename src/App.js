@@ -1,43 +1,45 @@
-import React, { Component } from 'react';
+import React, {useState}  from 'react';
 import './App.css';
-import './Hidden.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Projects from './Components/Projects';
-import Contact from './Components/Contact';
 import About from './Components/About';
+import CancelIcon from '@material-ui/icons/Cancel'
 import Resume from './Components/Resume';
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import Scroll from './Components/Scroll';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      route: 'home'
-      }
-    }
-  render() {
-    return (
-      <Router>
-        <Scroll/>
-      <div className="App">
-        <Switch>
-        <Route exact path='/Melhem'>
-          <Header/>
-          <About />
-          <Projects />
-          <Contact />
-          <Footer />
-        </Route>
-        <Route exact path='/resume'>
-          <Resume/>
-        </Route>
-        </Switch>
+
+
+
+function App() { 
+  const [cv, setCv] = useState(false)
+  const showResume = () => {
+      setCv(!cv)
+  };
+  function Button () { 
+    return(
+    <div>
+      <a href="#resume"><button className="primary_button" onClick={showResume}> My Resume</button></a>
+  
+    </div>
+    )
+  };
+  return (
+    <div className="App">
+      { cv ===  true ?
+      <div>
+        <Resume />
+        <button className="resume_button" onClick={showResume}> <CancelIcon/></button>
       </div>
-      </Router>
-    );
-  }
+      :
+      <>
+        <Header/>
+        <About Button={Button}/>
+        <Projects />
+        <Footer />
+      </>
+      }
+    </div>
+  );
 }
 
 
