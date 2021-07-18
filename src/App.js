@@ -6,8 +6,7 @@ import Projects from './Components/Projects';
 import About from './Components/About';
 import CancelIcon from '@material-ui/icons/Cancel'
 import Resume from './Components/Resume';
-
-
+import ContactForm from './Components/ContactForm';
 
 
 function App() { 
@@ -31,12 +30,13 @@ function App() {
         <button className="resume_button" onClick={showResume}> <CancelIcon/></button>
       </div>
       :
-      <>
-        <Header/>
+      <div>
+        <Header showResume={showResume}/>
         <About Button={Button}/>
         <Projects />
+        <ContactForm />
         <Footer />
-      </>
+      </div>
       }
     </div>
   );

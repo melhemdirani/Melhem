@@ -82,14 +82,6 @@ export const projects=[
       },
       {
         id: 10,
-        image: Linkedin,
-        projectName: "Linkedin-Clone",
-        link:"https://melhemdirani.github.io/Linkedin-clone/",
-        link2:"https://github.com/melhemdirani/Linkedin-clone",
-        description:"A Linkedin Demo clone that was built using React.js, Redux, Firebase and Material-UI",
-      },
-      {
-        id: 11,
         image: Smartbrain,
         projectName:"Smart Brain",
         link:"https://github.com/melhemdirani/smart-brain",
@@ -97,12 +89,20 @@ export const projects=[
         description:"A website that uses Clarifi API to detect a face on a given image. Made with React.Js, Redux and Tachyons"
       },
       {
-        id: 12,
+        id: 11,
         image: robofriends,
         projectName:"RoboFriends",
         link:"https://melhemdirani.github.io/robofriends",
         link2:"https://github.com/melhemdirani/robofriends",
         description:"A fun project that was part of my lesson plan with Zero To Mastery Academy built with React.js"
+      },
+      {
+        id: 12,
+        image: Linkedin,
+        projectName: "Linkedin-Clone",
+        link:"https://melhemdirani.github.io/Linkedin-clone/",
+        link2:"https://github.com/melhemdirani/Linkedin-clone",
+        description:"A Linkedin Demo clone that was built using React.js, Redux, Firebase and Material-UI",
       },
 
 ]    

@@ -12,12 +12,13 @@ const useStyles = makeStyles((theme) => ({
       alignItems: 'center',
       columnGap: '70px',
       padding: '60px',
+      backgroundColor: "rgbs(255, 255, 255)",
 
     },
     profilepic: {
-        height: '400px',
+        height: '600px',
         width: 'auto',
-
+        borderRadius: "40%"
     },
     aboutme: {
         textAlign: 'justify',
@@ -46,28 +47,60 @@ const useStyles = makeStyles((theme) => ({
             height: '30vh' ,
         },
     },
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('700')]: {
         profilepic: {
-            height: '150px',
+            height: '250px',
         },
         text1: {
             fontSize: '20px',
             width: "150px"
         },
         text2: {
-            fontSize: '10px',
+            fontSize: '15px',
         },
         button: {
             marginTop: "200px"
         }, 
         aboutme: {
-            width: "200px"
+            width: "300px"
         },
         about:{
             padding: "40px",
             columnGap: '20px',
             height: '40vh' ,
         }
+    },
+    [theme.breakpoints.down('xs')]:{
+        text1: {
+            fontSize: '17px',
+        },
+        text2: {
+            fontSize: '12px',
+            width: "90%"
+        },
+        profilepic: {
+            height: "200px"
+        },
+      
+        about: {
+            columnGap: '20px',
+            paddingRight: "30px",
+            
+        },
+    },
+    [theme.breakpoints.down('440')]:{
+        aboutme: {
+            width: "250px!important"
+        },
+        profilepic: {
+            height: "200px"
+        },
+      
+        about: {
+           height:"65vh",
+           padding: "10px"
+            
+        },
     },
     [theme.breakpoints.down('340')]:{
         text1: {
@@ -85,6 +118,14 @@ const useStyles = makeStyles((theme) => ({
             columnGap: '20px',
             paddingRight: "30px",
             
+        },
+    },
+    ["@media only screen and (max-width: 850px) and (max-height: 550px) "]:{    
+        about: {
+            height:"100vh",
+            
+        },
+        profilepic: {
         },
     }
 }))

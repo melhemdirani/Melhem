@@ -5,7 +5,10 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     projects_container:{
-        backgroundColor: "rgba(228, 231, 236,1)",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        backgroundColor: "rgba(248, 249, 250,1)",
         paddingBottom: "40px"
     },
     projects_title:{
@@ -13,8 +16,6 @@ const useStyles = makeStyles((theme) => ({
         padding: "50px 0",
         color: "black",
         fontSize: "40px",
-        marginBottom: "-50px"
-
     },
     [theme.breakpoints.down('1000')]:{
         projects_title:{

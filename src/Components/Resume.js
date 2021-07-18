@@ -93,15 +93,15 @@ const useStyles = makeStyles((theme) => ({
 function Courses ({Name, yearStart, place, website, yearEnd, locations,symbols}) {
     const{certicates_resume_topPadding,certifcates_resume,resume_link} = useStyles()
     return(
-    <>
+    <div>
         <p><span className={certifcates_resume}>{Name}</span> {yearStart} - {yearEnd}</p>
         <p className={certicates_resume_topPadding}>
             <span className={certifcates_resume}>{place}</span> {symbols}  {locations}
-            <a  href={website} target="_blank" rel="noreferrer" className={resume_link}>
+            <a  href={website} target="_blank" rel="noopener noreferrer" className={resume_link}>
             {website}
             </a>
         </p>
-    </>
+    </div>
     );
 }
 
@@ -127,11 +127,11 @@ function Resume() {
                             melhemdirani@hotmail.com
                         </a>
                         <p className={contact_title_resume}>Github:</p>
-                        <a  className={contact_resume}   href="https://github.com/melhemdirani" target="_blank" rel="noreferrer" >
+                        <a  className={contact_resume}   href="https://github.com/melhemdirani" target="_blank" rel="noopener noreferrer" >
                             github.com/melhemdirani
                         </a>
                         <p className={contact_title_resume}>LinkedIn:</p>
-                        <a  className={contact_resume}   href="https://github.com/melhemdirani" target="_blank" rel="noreferrer" >
+                        <a  className={contact_resume}   href="https://github.com/melhemdirani" target="_blank" rel="noopener noreferrer" >
                         linkedin.com/in/melhem-el-dirani-8a657ba5/
                         </a>
                         <h3>Languages</h3>

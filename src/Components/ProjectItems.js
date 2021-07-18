@@ -16,11 +16,15 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: "column",
         alignItems: "flex-start"
     },
+    imageContainer:{
+        overflow:"hidden",
+    },
     projectimg:{
-        width:"800px",
         boxShadow: "0px 4px 4px rgb(0,128,128)",
+        width:"800px",
         '&:hover': {
-            transform: "scale(.99)",
+            transform: "scale(1.2)",
+            WebkitTransition: "transform .5s ease-in-out"
         },
     },
     project_description:{
@@ -36,12 +40,14 @@ const useStyles = makeStyles((theme) => ({
         display: "flex"
     },
     link_b:{
-        color: "black",
+        color: "teal",
         border: "2px solid teal",
         marginRight: "20px",
         fontSize:"14px",
         padding: "5px",
         fontWeight: "700",
+        backgroundColor: "white",
+        borderRadius: "7px",
         '&:hover': {
             color: "white",
             backgroundColor: "rgb(0,128,128)"
@@ -53,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
 
-    [theme.breakpoints.down('1100')]: {
+    [theme.breakpoints.down('1250')]: {
         project_description:{
             width:"250px",
             fontSize: "18px",
@@ -114,7 +120,7 @@ const useStyles = makeStyles((theme) => ({
    
 }))
 function ProjectItems({image,projectName,link,link2, description}) {
-    const {container,projectimg2,projectimg1,projectimg,Mobilecontainer,Name,project_description,links,link_b } = useStyles()
+    const {container,projectimg2,projectimg1,projectimg,imageContainer,Mobilecontainer,Name,project_description,links,link_b } = useStyles()
     return (
         <div className={container}>
             <div className={Mobilecontainer}>
@@ -126,7 +132,7 @@ function ProjectItems({image,projectName,link,link2, description}) {
                     <a className={link_b} href={link2} target="_blank" rel="noreferrer"> Source Code </a>
                 </div>  
             </div>  
-            <a href={link}><img className={clsx(projectimg1, projectimg)}src={image} alt={projectName}/> </a>
+            <a href={link} className={imageContainer}><img className={clsx(projectimg1, projectimg)}src={image} alt={projectName}/> </a>
         </div>
     )
 

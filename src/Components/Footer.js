@@ -5,104 +5,71 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import PhoneIcon from '@material-ui/icons/Phone';
 import { makeStyles } from "@material-ui/core";
-import clsx from 'clsx';
-
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const useStyles = makeStyles((theme) => ({
-    contactinfo:{
-        fontSize: "40px",
-        color: "white"
-    },
-    contactinfo2:{
-        fontSize: "25px",
-        color: "white"
-    },
-    contactinfo3:{
-        '&:hover': {
-            transform: "scale(1.06)",
-        },
-    },
+
     footer:{
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        backgroundColor: "rgb(0,128,128)",
+        backgroundColor: "rgba(102, 101, 101, .3)",
     },
     icon:{
         height: "30px",
         width: "auto",
         margin: "20px",
+        color: "rgb(102, 101, 101)",
         '&:hover': {
             transform: "scale(1.2)",
         },
     }, 
     icons:{
-        marginTop: "40px",
         display: "flex",
-        alignItems:"space-between"
+        alignItems:"space-between",
+        marginBottom: "40px"
     },
-
-    [theme.breakpoints.down('1030')]:{
-        contactinfo: {
-            fontSize: '30px'
-        },
-        contactinfo2: {
-            fontSize: '15px'
-        },
+    title:{
+        fontSize: "22px",
+        fontWeight: "600",
+        textAlign: "left"
     },
     [theme.breakpoints.down('xs')]: {
-        contactinfo: {
-            fontSize: '20px',
-        },
-        contactinfo2: {
-            fontSize: '10px',
-        },
         icon:{
             height: "20px",
             margin: "10px",
         }, 
     },
-    [theme.breakpoints.down('340')]:{
-        contactinfo: {
-            fontSize: '15px',
-        },
-        contactinfo2: {
-            fontSize: '8px',
-        },
-    }
 }))
 
 
 function Footer() {
-    const{contactinfo,footer,contactinfo2,icon,icons,contactinfo3} = useStyles()
+    const{footer,icon,icons,title} = useStyles()
 
     return (
-        <div  container className={footer} id="contact"  >
-
-            <h1 className={contactinfo} > CONTACT</h1>
-            <p className={contactinfo2}> 
-                Interested in working together? 
-            </p>
-            <a href="mailto:melhemdirani@hotmail.com" className={clsx(contactinfo3, contactinfo2)}> click here </a>
-
+        <div className={footer} id="contact"  >
+            <p className={title}>Let's socialize</p>
             <div className={icons} >
-
                 <a href="mailto:melhemdirani@hotmail.com" id="Contact" >
                     <MailOutlineIcon className={icon} />
                 </a>
                 <a  title="Call SF" href="tel:+96171523153">
                     <PhoneIcon className={icon} />
                 </a>
-                <a href="https://facebook.com/mel7em" target="_blank" rel="noreferrer" title="Facebook">
+                <a href="https://facebook.com/mel7em" target="_blank" rel="noopener noreferrer" title="Facebook">
                     <FacebookIcon className={icon} />
                 </a>
-                <a   href="https://github.com/melhemdirani" target="_blank" rel="noreferrer" title="GitHub">
+                <a   href="https://github.com/melhemdirani" target="_blank" rel="noopener noreferrer" title="GitHub">
                     <GitHubIcon className={icon}/>
                 </a>
-                <a  href="https://instagram.com/melhem_dirani" target="_blank" rel="noreferrer"  title="Instagram">
+                <a  href="https://instagram.com/melhem_dirani" target="_blank" rel="noopener noreferrer"  title="Instagram">
                     <InstagramIcon className={icon} />
                 </a>
+                <a  href="https://www.linkedin.com/in/melhem-el-dirani-8a657ba5/" target="_blank" rel="noopener noreferrer"  title="linkedIn">
+                    <LinkedInIcon className={icon} />
+                </a>
             </div>
+            <p>Copyright ©2021 All rights reserved</p>
         </div>
     )
 }
