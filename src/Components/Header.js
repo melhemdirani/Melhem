@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
         right: "35px",
     },
     menuItems:{
-        fontSize: "20px",
+        fontSize: "17px",
         padding: "20px",
         fontWeight: "900",
         borderRadius: "20px",
@@ -62,13 +62,13 @@ const useStyles = makeStyles((theme) => ({
     h1:{
         color:  "white",
         fontWeight: "900",
-        fontSize: "60px",
+        fontSize: "50px",
 
     },
     p:{
         color:  "white",
         fontWeight: "600",
-        fontSize: "30px", 
+        fontSize: "25px", 
         marginBottom: "100px",
         marginTop: "5px"
         
@@ -106,10 +106,10 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down('1000')]: {
         menuItems:{
-            fontSize: "17px"
+            fontSize: "15px"
         },
         h1:{
-            fontSize: "50px"
+            fontSize: "45px"
         },
         header_body:{
             marginTop: "450px"
@@ -123,7 +123,7 @@ const useStyles = makeStyles((theme) => ({
             fontSize: "25px"
         },
         menuItems:{
-            fontSize: "15px",
+            fontSize: "14px",
             paddingLeft: "10px"
         },
 

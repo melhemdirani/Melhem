@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     links:{
         display: "flex"
     },
-    link_b:{
+    link_a:{
         color: "teal",
         border: "2px solid teal",
         marginRight: "20px",
@@ -51,6 +51,20 @@ const useStyles = makeStyles((theme) => ({
         '&:hover': {
             color: "white",
             backgroundColor: "rgb(0,128,128)"
+        },
+    },
+    link_b:{
+        color: "white",
+        border: "2px solid teal",
+        marginRight: "20px",
+        fontSize:"14px",
+        padding: "5px",
+        fontWeight: "700",
+        backgroundColor: "teal",
+        borderRadius: "7px",
+        '&:hover': {
+            color: "teal",
+            backgroundColor: "white"
         },
     },
     [theme.breakpoints.up('md')]: {
@@ -69,6 +83,9 @@ const useStyles = makeStyles((theme) => ({
             width:"600px",
         },
         link_b:{
+            fontSize:"12px",
+        },
+        link_a:{
             fontSize:"12px",
         },
     }, 
@@ -101,6 +118,10 @@ const useStyles = makeStyles((theme) => ({
             fontSize:"8px",
             padding: "3px"
         },
+        link_a:{
+            fontSize:"8px",
+            padding: "3px"
+        },
         container:{
             marginTop: "30px"
         }
@@ -116,11 +137,15 @@ const useStyles = makeStyles((theme) => ({
             fontSize:"6px",
             padding: "2px"
         },
+        link_a:{
+            fontSize:"6px",
+            padding: "2px"
+        },
     }
    
 }))
 function ProjectItems({image,projectName,link,link2, description}) {
-    const {container,projectimg2,projectimg1,projectimg,imageContainer,Mobilecontainer,Name,project_description,links,link_b } = useStyles()
+    const {container,projectimg2,projectimg1,projectimg,imageContainer,Mobilecontainer,Name,project_description,links,link_b,link_a } = useStyles()
     return (
         <div className={container}>
             <div className={Mobilecontainer}>
@@ -128,7 +153,7 @@ function ProjectItems({image,projectName,link,link2, description}) {
                 <a href={link}><img className={clsx(projectimg2, projectimg)} src={image} alt={projectName}/> </a>
                 <p className={project_description}>{description}</p>
                 <div className={links}>
-                    <a className={link_b}  href={link} target="_blank" rel="noreferrer"> View Live </a>
+                    <a className={link_a}  href={link} target="_blank" rel="noreferrer"> View Live </a>
                     <a className={link_b} href={link2} target="_blank" rel="noreferrer"> Source Code </a>
                 </div>  
             </div>  

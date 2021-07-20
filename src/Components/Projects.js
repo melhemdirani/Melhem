@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         padding: "50px 0",
         color: "black",
-        fontSize: "40px",
+        fontSize: "35px",
     },
     [theme.breakpoints.down('1000')]:{
         projects_title:{

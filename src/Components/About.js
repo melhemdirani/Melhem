@@ -25,10 +25,10 @@ const useStyles = makeStyles((theme) => ({
         width: "900px"
     },
     text1: {
-        fontSize: '40px',
+        fontSize: '35px',
     },
     text2: {
-        fontSize: '25px'
+        fontSize: '22px'
     },
   
     [theme.breakpoints.down('1030')]:{

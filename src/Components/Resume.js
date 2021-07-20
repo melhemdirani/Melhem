@@ -131,7 +131,7 @@ function Resume() {
                             github.com/melhemdirani
                         </a>
                         <p className={contact_title_resume}>LinkedIn:</p>
-                        <a  className={contact_resume}   href="https://github.com/melhemdirani" target="_blank" rel="noopener noreferrer" >
+                        <a  className={contact_resume}   href="https://www.linkedin.com/in/melhem-el-dirani-8a657ba5/" target="_blank" rel="noopener noreferrer" >
                         linkedin.com/in/melhem-el-dirani-8a657ba5/
                         </a>
                         <h3>Languages</h3>

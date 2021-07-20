@@ -4,6 +4,8 @@ import { makeStyles } from "@material-ui/core";
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
+import clsx from 'clsx';
+
 
 const useStyles = makeStyles((theme) => ({
     container:{
@@ -21,9 +23,10 @@ const useStyles = makeStyles((theme) => ({
     labels:{
         color: "gray",
         fontSize: "20px",
-        marginBottom: "10px",
-        marginTop: "20px"
+        marginTop: "20px",
+        zIndex: "999"
     },
+    
     inputs:{
         height: "40px",
         fontSize: "17px",
@@ -32,11 +35,21 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "rgba(248, 249, 250,1)",
     },
     messageInput:{
+        resize: "none",
         height: "100px",
         fontSize: "17px",
         border: "none",
         backgroundColor: "rgba(248, 249, 250,1)",
         borderBottom: "1px solid black",
+
+    },
+    messageInput2:{
+        resize: "none",
+        height: "100px",
+        fontSize: "17px",
+        border: "none",
+        backgroundColor: "rgba(248, 249, 250,1)",
+        borderBottom: "1px solid teal",
 
     },
     flexDisplay:{
@@ -45,7 +58,6 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
         marginBottom: "5px",
         color: "black",
-
 
     },
     submitButton:{
@@ -76,8 +88,11 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "space-evenly",
         flexWrap: "wrap"
     },
+    margin:{
+        marginTop: "20px"
+    },
     title:{
-        fontSize: "40px",
+        fontSize: "35px",
         color: "black",
         textAlign: "center",
         marginBottom: "70px"
@@ -164,12 +179,23 @@ const ContactForm = () =>{
         flexDisplay,
         contactInfo, 
         second_column,
-        subTitle
+        subTitle,
+        margin
     } = useStyles()
 
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
+
+    const [styling, setStyling] = useState("")
+    const [styling2, setStyling2] = useState("")
+
+    const handleChange = () => {
+        setStyling(margin);
+    }
+    const handleChange2 = () => {
+        setStyling2(margin);
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -201,15 +227,19 @@ const ContactForm = () =>{
                             name="name"
                             value={name}
                             onChange={ (e) => setName(e.target.value) }
-                            className={inputs}
+                            className={clsx(styling2, inputs)}
+
+                            onClick={handleChange2}
+
                         />
-                        <label id="email-label" className={labels} > Email </label>
+                        <label id="email-label" className={labels}> Email </label>
                         <input type="email" 
                             required 
                             name="email"
                             value={email} 
-                            onChange={ (e) => setEmail(e.target.value) }
-                            className={inputs}
+                            onChange={ (e) => setEmail(e.target.value)}
+                            className={clsx(styling, inputs)}
+                            onClick={handleChange}
                         />
                         <label id="message" className={labels} > Message </label>
                         <textarea  
