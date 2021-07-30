@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: "-21px",
         backgroundImage: `linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 0)),  url(${background})`,
         backgroundBlendMode: "darken",
+        backgroundAttachment: "fixed",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         height: "100vh",
@@ -57,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        marginTop: "330px"
+        marginTop: "20vh"
     },
     h1:{
         color:  "white",

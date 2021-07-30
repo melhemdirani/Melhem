@@ -1,16 +1,17 @@
 import React, {useState} from 'react'
 import emailjs from "emailjs-com";
 import { makeStyles } from "@material-ui/core";
-import LocationOnIcon from '@material-ui/icons/LocationOn';
-import PhoneIcon from '@material-ui/icons/Phone';
-import EmailIcon from '@material-ui/icons/Email';
 import clsx from 'clsx';
+
 
 
 const useStyles = makeStyles((theme) => ({
     container:{
         padding: "40px",
         backgroundColor: "rgba(248, 249, 250, 1)",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center"
     },
     first_column:{
 
@@ -18,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     contactForm:{
         display: "flex",
         flexDirection: "column",
-        width: "600px"
+        width: "800px"
     },
     labels:{
         color: "gray",
@@ -52,35 +53,21 @@ const useStyles = makeStyles((theme) => ({
         borderBottom: "1px solid teal",
 
     },
-    flexDisplay:{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        marginBottom: "5px",
-        color: "black",
-
-    },
     submitButton:{
         backgroundColor: "white",
         color: "teal",
-        height: "30px",
         marginTop: "40px",
         marginBottom: "40px",
-        borderRadius: "7px",
-        borderColor: "teal",
+        borderRadius: "20px",
+        border: "1px solid teal",
         cursor: "pointer",
         fontSize: "20px",
-        width: "100px",
+        width: "220px",
+        height: "35px",
         '&:hover': {
             backgroundColor: "teal",
             color: "white"
         },  
-    },
-    second_column:{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "flex-start",
-        marginLeft: "20px"
     },
     second_row:{
         display: "flex",
@@ -89,44 +76,30 @@ const useStyles = makeStyles((theme) => ({
         flexWrap: "wrap"
     },
     margin:{
-        marginTop: "20px"
+        borderColor: "teal",
+        color: "teal"
     },
     title:{
         fontSize: "35px",
         color: "black",
         textAlign: "center",
-        marginBottom: "70px"
-    },
-    subTitle:{
-        fontSize: "25px",
-    },
-    contactInfo:{
-        color: "black",
-        marginLeft: "30px",
-        fontSize: "16px"
+        marginBottom: "70px",
+        display: "flex",
+        alignItems: "center"
     },
     [theme.breakpoints.down('1030')]:{
         title: {
             fontSize: '30px'
         },
-        subTitle:{
-            fontSize: "20px",
-        },
     },
     [theme.breakpoints.down('820')]:{
         contactForm: {
-            width: '300px'
+            width: '600px'
         },
     },
     [theme.breakpoints.down('xs')]: {
         title: {
             fontSize: '20px',
-        },
-        subTitle:{
-            fontSize: "15px",
-        },
-        contactInfo:{
-            fontSize: "13px"
         },
         inputs:{
             fontSize: "11px",
@@ -136,17 +109,15 @@ const useStyles = makeStyles((theme) => ({
         },
         submitButton:{
             fontSize: "12px",
+            width: "130px"
+        },
+        contactForm: {
+            width: '300px'
         },
     },
     [theme.breakpoints.down('340')]:{
         title: {
             fontSize: '15px',
-        },
-        subTitle:{
-            fontSize: "12px",
-        },
-        contactInfo:{
-            fontSize: "10px"
         },
         inputs:{
             fontSize: "9px",
@@ -176,10 +147,6 @@ const ContactForm = () =>{
         first_column, 
         container,
         second_row,
-        flexDisplay,
-        contactInfo, 
-        second_column,
-        subTitle,
         margin
     } = useStyles()
 
@@ -189,12 +156,25 @@ const ContactForm = () =>{
 
     const [styling, setStyling] = useState("")
     const [styling2, setStyling2] = useState("")
+    const [styling3, setStyling3] = useState("")
 
     const handleChange = () => {
         setStyling(margin);
     }
     const handleChange2 = () => {
         setStyling2(margin);
+    }
+    const handleChange3 = () => {
+        setStyling3(margin);
+    }
+    const resetBorder = () =>{
+        if (styling === margin) {
+            setStyling("")
+        } else  if (styling2 === margin) {
+            setStyling2("")
+        } else  if (styling3 === margin) {
+            setStyling3("")
+        }
     }
 
     const handleSubmit = (e) => {
@@ -216,56 +196,43 @@ const ContactForm = () =>{
         setMessage('');
     }
     return(
-        <div className={container}>
-                <h1 className={title} > CONTACT ME</h1>
+        <div className={container} onClick={resetBorder}>
+                <h1 className={title} > CONTACT ME </h1>
             <div className={second_row}>
                 <div className={first_column}>
                     <form onSubmit={handleSubmit} className={contactForm}>
-                        <label id="name-label" className={labels} > Name </label> 
+                        <label id="name-label" className={clsx(styling, labels)} > Name </label> 
                         <input type="text"  
                             required 
                             name="name"
                             value={name}
                             onChange={ (e) => setName(e.target.value) }
-                            className={clsx(styling2, inputs)}
-
-                            onClick={handleChange2}
+                            className={clsx(styling, inputs)}
+                            onClick={handleChange}
 
                         />
-                        <label id="email-label" className={labels}> Email </label>
+                        <label id="email-label" className={clsx(styling2, labels)} > Email </label>
                         <input type="email" 
                             required 
                             name="email"
                             value={email} 
                             onChange={ (e) => setEmail(e.target.value)}
-                            className={clsx(styling, inputs)}
-                            onClick={handleChange}
+                            className={clsx(styling2, inputs)}
+                            onClick={handleChange2}
                         />
-                        <label id="message" className={labels} > Message </label>
+                        <label id="message" className={clsx(styling3, labels)}  > Message </label>
                         <textarea  
                             name="message"
                             value={message} 
                             onChange={ (e) => setMessage(e.target.value)}
-                            className={messageInput}
+                            className={clsx(styling3, messageInput)}
+                            onClick={handleChange3}
+
                         /> 
-                        <button type="submit" className={submitButton} >Submit</button>
+                        <button type="submit" className={submitButton} >Send Message</button>
                     </form>
                 </div>
-                <div className={second_column}>
-                    <h2 className={subTitle}>Contact Info</h2>
-                    <div className={flexDisplay}>
-                        <LocationOnIcon /> 
-                        <p className={contactInfo}>Abra, Saida, South-Lebanon</p>
-                    </div>
-                    <a href="mailto:melhemdirani@hotmail.com" id="Contact" className={flexDisplay} >
-                        <EmailIcon /> 
-                        <p className={contactInfo}>melhemdirani@hotmail.com</p>
-                    </a>
-                    <a  title="Call SF" href="tel:+96171523153" className={flexDisplay}>
-                        <PhoneIcon /> 
-                        <p className={contactInfo}> +(961)-71-523153</p>
-                    </a>
-                </div>
+                
             </div>
         </div>
     )

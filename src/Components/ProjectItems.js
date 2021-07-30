@@ -157,7 +157,7 @@ function ProjectItems({image,projectName,link,link2, description}) {
                     <a className={link_b} href={link2} target="_blank" rel="noreferrer"> Source Code </a>
                 </div>  
             </div>  
-            <a href={link} className={imageContainer}><img className={clsx(projectimg1, projectimg)}src={image} alt={projectName}/> </a>
+            <a href={link} className={imageContainer}><img className={clsx(projectimg1, projectimg)} src={image} alt={projectName}/> </a>
         </div>
     )
 

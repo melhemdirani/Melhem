@@ -16,9 +16,9 @@ const useStyles = makeStyles((theme) => ({
 
     },
     profilepic: {
-        height: '600px',
+        height: '60vh',
         width: 'auto',
-        borderRadius: "40%"
+        borderRadius: "5px"
     },
     aboutme: {
         textAlign: 'justify',

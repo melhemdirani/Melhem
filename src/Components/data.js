@@ -2,6 +2,8 @@ import robofriends from '../images/robofriends.jpg'
 import Linkedin from '../images/Linkedin.png'
 import Smartbrain from '../images/Smartbrain.jpg'
 import Adventure from '../images/Adventure.png'
+import Restaurant from '../images/Restaurant.png'
+
 
 export const coursesTaken=[
     {   
@@ -71,30 +73,22 @@ export const experience=[
 
 ]
 export const projects=[
-    {   
-        id: 9,
-        image: Adventure,
-        projectName: "Visit Lebanon",
-        link:"https://melhemdirani.github.io/Visit-Lebanon",
-        link2:"https://github.com/melhemdirani/visit-lebanon",
-        description:"A demo website of a travel company that is promoting touristic places in Lebanon. Built using React.js and npm",
-
-      },
+ 
       {
         id: 10,
         image: Smartbrain,
         projectName:"Smart Brain",
         link:"https://github.com/melhemdirani/smart-brain",
         link2:"https://github.com/melhemdirani/smart-brain",
-        description:"A website that uses Clarifi API to detect a face on a given image. Made with React.Js, Redux and Tachyons"
+        description:"A website that uses Clarifi API to detect a face on a given image. built with React.Js, Redux and Tachyons"
       },
       {
-        id: 11,
-        image: robofriends,
-        projectName:"RoboFriends",
-        link:"https://melhemdirani.github.io/robofriends",
-        link2:"https://github.com/melhemdirani/robofriends",
-        description:"A fun project that was part of my lesson plan with Zero To Mastery Academy built with React.js"
+        id: 13,
+        image: Restaurant,
+        projectName: "Restaurant-Confusion",
+        link:"https://melhemdirani.github.io/Restaurant-Confusion/Restaurant-Confusion/",
+        link2:"https://github.com/melhemdirani/Restaurant-Confusion/tree/master",
+        description:"A restaurant website built with React, Redux and Reactstrap",
       },
       {
         id: 12,
@@ -104,5 +98,24 @@ export const projects=[
         link2:"https://github.com/melhemdirani/Linkedin-clone",
         description:"A Linkedin Demo clone that was built using React.js, Redux, Firebase and Material-UI",
       },
+      {   
+        id: 9,
+        image: Adventure,
+        projectName: "Visit Lebanon",
+        link:"https://melhemdirani.github.io/Visit-Lebanon",
+        link2:"https://github.com/melhemdirani/visit-lebanon",
+        description:"A demo website of a travel company that is promoting touristic places in Lebanon. Built using React.js and npm",
+
+      },
+      {
+        id: 11,
+        image: robofriends,
+        projectName:"RoboFriends",
+        link:"https://melhemdirani.github.io/robofriends",
+        link2:"https://github.com/melhemdirani/robofriends",
+        description:"A fun project that was part of my lesson plan with Zero To Mastery Academy built with React.js"
+      }
+   
+      
 
 ]    
