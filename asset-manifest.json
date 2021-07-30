@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Melhem/static/css/main.9876ff83.chunk.css",
-    "main.js": "/Melhem/static/js/main.7f1039a5.chunk.js",
-    "main.js.map": "/Melhem/static/js/main.7f1039a5.chunk.js.map",
+    "main.js": "/Melhem/static/js/main.c6b1c94d.chunk.js",
+    "main.js.map": "/Melhem/static/js/main.c6b1c94d.chunk.js.map",
     "runtime-main.js": "/Melhem/static/js/runtime-main.ee8b4327.js",
     "runtime-main.js.map": "/Melhem/static/js/runtime-main.ee8b4327.js.map",
     "static/js/2.4cdaa4d4.chunk.js": "/Melhem/static/js/2.4cdaa4d4.chunk.js",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.ee8b4327.js",
     "static/js/2.4cdaa4d4.chunk.js",
     "static/css/main.9876ff83.chunk.css",
-    "static/js/main.7f1039a5.chunk.js"
+    "static/js/main.c6b1c94d.chunk.js"
   ]
 }
