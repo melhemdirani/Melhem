@@ -104,7 +104,7 @@ export const projects=[
         projectName: "Visit Lebanon",
         link:"https://melhemdirani.github.io/Visit-Lebanon",
         link2:"https://github.com/melhemdirani/visit-lebanon",
-        description:"A demo website of a travel company that is promoting touristic places in Lebanon. Built using React.js and npm",
+        description:"A demo website of a travel company that is promoting touristic places in Lebanon. Built using React ",
 
       },
       {

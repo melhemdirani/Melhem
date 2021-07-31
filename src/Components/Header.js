@@ -171,6 +171,7 @@ const useStyles = makeStyles((theme) => ({
         },
         header:{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),  url(${background2})`,
+            backgroundAttachment: "scroll"
         },
         p:{
          fontSize: "17px", 
