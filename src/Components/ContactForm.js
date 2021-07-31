@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import emailjs from "emailjs-com";
 import { makeStyles } from "@material-ui/core";
 import clsx from 'clsx';
+import Message from '../images/message.jpg'
 
 
 
@@ -19,11 +20,13 @@ const useStyles = makeStyles((theme) => ({
     contactForm:{
         display: "flex",
         flexDirection: "column",
-        width: "800px"
+        width: "500px",
+        marginRight: "100px"
+
     },
     labels:{
         color: "gray",
-        fontSize: "20px",
+        fontSize: "15px",
         marginTop: "20px",
         zIndex: "999"
     },
@@ -62,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
         border: "1px solid teal",
         cursor: "pointer",
         fontSize: "20px",
-        width: "220px",
+        width: "120px",
         height: "35px",
         '&:hover': {
             backgroundColor: "teal",
@@ -72,8 +75,7 @@ const useStyles = makeStyles((theme) => ({
     second_row:{
         display: "flex",
         alignItems: "flex-start",
-        justifyContent: "space-evenly",
-        flexWrap: "wrap"
+        justifyContent: "center",
     },
     margin:{
         borderColor: "teal",
@@ -87,14 +89,42 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         alignItems: "center"
     },
-    [theme.breakpoints.down('1030')]:{
+    image: {
+        width: "400px",
+    },
+    text:{
+        width: "500px",
+        fontSize: "18px",
+    },
+    [theme.breakpoints.down('1130')]:{
         title: {
             fontSize: '30px'
         },
+        image: {
+            width: "300px",
+            alignSelf: "center"
+        },
+        text:{
+            width: "300px",
+
+        },
+        contactForm:{
+            width: "300px",
+            alignSelf: "flex-end"
+    
+        },
     },
-    [theme.breakpoints.down('820')]:{
-        contactForm: {
-            width: '600px'
+    [theme.breakpoints.down('740')]:{
+        second_row:{
+            flexDirection: "column-reverse"
+        },
+        contactForm:{
+            marginRight: "0",
+        },
+        text:{
+           marginTop: "70px",
+           fontSize: "14px",
+
         },
     },
     [theme.breakpoints.down('xs')]: {
@@ -104,15 +134,22 @@ const useStyles = makeStyles((theme) => ({
         inputs:{
             fontSize: "11px",
         },
+        labels:{
+            fontSize: "11px",
+        },
         messageInput:{
             fontSize: "11px"
         },
         submitButton:{
             fontSize: "12px",
-            width: "130px"
+            width: "90px"
         },
         contactForm: {
-            width: '300px'
+            width: '270px'
+        },
+        text:{
+            fontSize: "12px",
+
         },
     },
     [theme.breakpoints.down('340')]:{
@@ -120,6 +157,9 @@ const useStyles = makeStyles((theme) => ({
             fontSize: '15px',
         },
         inputs:{
+            fontSize: "9px",
+        },
+        labels:{
             fontSize: "9px",
         },
         messageInput:{
@@ -132,8 +172,13 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('320')]:{
         contactForm: {
             width: '220px'
-
         },
+        image:{
+            width: '220px'
+        },
+        text:{
+            width: '220px'
+        }
     }
 }))
 
@@ -147,7 +192,9 @@ const ContactForm = () =>{
         first_column, 
         container,
         second_row,
-        margin
+        margin,
+        image,
+        text
     } = useStyles()
 
     const [name, setName] = useState("")
@@ -196,10 +243,13 @@ const ContactForm = () =>{
         setMessage('');
     }
     return(
-        <div className={container} onClick={resetBorder}>
+        <div className={container} onClick={resetBorder}  id="contact" >
                 <h1 className={title} > CONTACT ME </h1>
+
             <div className={second_row}>
                 <div className={first_column}>
+                <p className={text}>Interested in working together? Or perhaps you would just like to say hi, leave a message bellow.</p>
+
                     <form onSubmit={handleSubmit} className={contactForm}>
                         <label id="name-label" className={clsx(styling, labels)} > Name </label> 
                         <input type="text"  
@@ -229,10 +279,11 @@ const ContactForm = () =>{
                             onClick={handleChange3}
 
                         /> 
-                        <button type="submit" className={submitButton} >Send Message</button>
+                        <button type="submit" className={submitButton} >Send</button>
                     </form>
                 </div>
-                
+                <img src={Message} alt="" className={image}/>
+
             </div>
         </div>
     )

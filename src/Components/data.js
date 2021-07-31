@@ -78,7 +78,7 @@ export const projects=[
         id: 10,
         image: Smartbrain,
         projectName:"Smart Brain",
-        link:"https://github.com/melhemdirani/smart-brain",
+        link:"https://melhemdirani.github.io/smart-brain/",
         link2:"https://github.com/melhemdirani/smart-brain",
         description:"A website that uses Clarifi API to detect a face on a given image. built with React.Js, Redux and Tachyons"
       },
@@ -86,7 +86,7 @@ export const projects=[
         id: 13,
         image: Restaurant,
         projectName: "Restaurant-Confusion",
-        link:"https://melhemdirani.github.io/Restaurant-Confusion/Restaurant-Confusion/",
+        link:"https://melhemdirani.github.io/Restaurant-Confusion/",
         link2:"https://github.com/melhemdirani/Restaurant-Confusion/tree/master",
         description:"A restaurant website built with React, Redux and Reactstrap",
       },

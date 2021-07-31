@@ -11,13 +11,14 @@ import ContactForm from './Components/ContactForm';
 
 function App() { 
   const [cv, setCv] = useState(false)
+
   const showResume = () => {
       setCv(!cv)
   };
   function Button () { 
     return(
     <div>
-      <a href="#resume"><button className="primary_button" onClick={showResume}> My Resume</button></a>
+    <a className="primary_button" href="#resume" onClick={showResume}> My Resume</a>
   
     </div>
     )
@@ -33,7 +34,7 @@ function App() {
       <div>
         <Header showResume={showResume}/>
         <About Button={Button}/>
-        <Projects />
+        <Projects  />
         <ContactForm />
         <Footer />
       </div>

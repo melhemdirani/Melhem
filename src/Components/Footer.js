@@ -1,5 +1,4 @@
 import React from 'react'
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -8,7 +7,6 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
-import ContactsIcon from '@material-ui/icons/Contacts';
 
 const useStyles = makeStyles((theme) => ({
 
@@ -75,13 +73,19 @@ const useStyles = makeStyles((theme) => ({
         margin: "0",
         padding: "20px",
     },
-    [theme.breakpoints.down('1100')]: {
+    [theme.breakpoints.down('780')]: {
         footer:{
            flexDirection: "column-reverse",
-           alignItems: "center"
+           alignItems: "flex-start"
         },
         column1:{
-         marginTop: "20px"
+            marginTop: "20px",
+            alignItems: "flex-start",
+            marginLeft: "20px"
+        },
+        column1Icons:{
+            marginLeft: "-10px"
+        
         },
     },  
     [theme.breakpoints.down('xs')]: {
@@ -111,14 +115,14 @@ const useStyles = makeStyles((theme) => ({
 
 
 function Footer() {
-    const{footer,icon,icon2,second_column,subTitle,contactInfo,flexDisplay,column1,Copyright,footer_container} = useStyles()
+    const{footer,icon,icon2,second_column,subTitle,contactInfo,flexDisplay,column1,Copyright,footer_container,column1Icons} = useStyles()
 
     return (
         <div className={footer_container}>
-            <div className={footer} id="contact"  >
+            <div className={footer} >
                 <div className={column1}>
                     <p className={subTitle}>Let's socialize </p>
-                    <div >
+                    <div className={column1Icons}>
                         <a href="https://facebook.com/mel7em" target="_blank" rel="noopener noreferrer" title="Facebook">
                             <FacebookIcon className={icon} />
                         </a>

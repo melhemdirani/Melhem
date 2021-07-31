@@ -42,8 +42,8 @@ function Projects() {
     const {projects_container, projects_title} = useStyles()
 
     return (
-        <div  className={projects_container} >
-            <h1 className={projects_title} id="projects">PROJECTS</h1> 
+        <div  className={projects_container} id="projects">
+            <h1 className={projects_title} >PROJECTS</h1> 
                 {projects.map(({ projectName, link, link2, description, image, id}) => (
                     <ProjectItems 
                         key={id}
