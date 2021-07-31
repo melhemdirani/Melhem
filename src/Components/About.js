@@ -1,6 +1,7 @@
 import React  from 'react';
 import ProfilePic from '../images/ProfilePic.png';
 import { makeStyles } from "@material-ui/core";
+import clsx from 'clsx';
     
 const useStyles = makeStyles((theme) => ({
     about: {
@@ -185,7 +186,7 @@ const useStyles = makeStyles((theme) => ({
         },
     }
 }))
-function About({Button}) {
+function About({showResume}) {
 
     const { about,profilepic,aboutme,skills,text1,text2, button,flex, progress,progress2,progress3,progress4,progress5,progress6,progress7,progress8,progress9,progress10, flex2} = useStyles()
     return (
@@ -218,8 +219,9 @@ function About({Button}) {
                         <div className={progress10} />
                     </div>
                     <div className={flex2}>
-                        <Button className={button} />
+                        <a className={clsx(button, "primary_button")} href="#contact" onClick={showResume}> My Resume</a>
                         <a className="secondary_button" href="#contact"> Hire Me</a>
+
                     </div>
                 </div>
             </div>

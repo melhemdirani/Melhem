@@ -15,14 +15,7 @@ function App() {
   const showResume = () => {
       setCv(!cv)
   };
-  function Button () { 
-    return(
-    <div>
-    <a className="primary_button" href="#resume" onClick={showResume}> My Resume</a>
   
-    </div>
-    )
-  };
   return (
     <div className="App">
       { cv ===  true ?
@@ -33,7 +26,7 @@ function App() {
       :
       <div>
         <Header showResume={showResume}/>
-        <About Button={Button}/>
+        <About showResume={showResume}/>
         <Projects  />
         <ContactForm />
         <Footer />
