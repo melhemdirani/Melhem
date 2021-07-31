@@ -127,9 +127,7 @@ const useStyles = makeStyles((theme) => ({
         text2: {
             fontSize: '15px',
         },
-        button: {
-            marginTop: "200px"
-        }, 
+     
         profilepic: {
             height: "600px",
         },
