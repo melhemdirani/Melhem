@@ -103,8 +103,12 @@ const useStyles = makeStyles((theme) => ({
 
     },
     [theme.breakpoints.down('xs')]: {
+
         projectimg:{
             width:"300px",
+            '&:hover': {
+                transform: "none",
+            },
         },
         Name:{
             fontSize: "13px",

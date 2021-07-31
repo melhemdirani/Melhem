@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core";
 import clsx from 'clsx';
 import MenuIcon from '@material-ui/icons/Menu';
 import background from '../images/background_header.JPG'
+import background2 from '../images/background_header2.JPG'
 import useWindowDimensions from './windowDimensions'
 import Scrollspy from 'react-scrollspy'
 import logo from "../images/logo.png"
@@ -156,9 +157,7 @@ const useStyles = makeStyles((theme) => ({
         header_body:{
             margin: "300px 30px 200px 40px"
         },
-        header:{
-            backgroundPosition: "right",
-        }
+    
     },
     [theme.breakpoints.down('xs')]: {
         sectionChange:{
@@ -170,7 +169,9 @@ const useStyles = makeStyles((theme) => ({
             height: "30px",
             marginTop:" 50px"
         },
-
+        header:{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),  url(${background2})`,
+        },
         p:{
          fontSize: "17px", 
 

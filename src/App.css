@@ -25,6 +25,7 @@
     opacity: .7;
     border-radius: 25px;
     cursor: pointer;
+    margin-left: 10px ;
 
 }
 .secondary_button:hover{
