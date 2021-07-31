@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Melhem/static/css/main.0c2a516d.chunk.css",
-    "main.js": "/Melhem/static/js/main.dc35bfb3.chunk.js",
-    "main.js.map": "/Melhem/static/js/main.dc35bfb3.chunk.js.map",
+    "main.js": "/Melhem/static/js/main.6f450e38.chunk.js",
+    "main.js.map": "/Melhem/static/js/main.6f450e38.chunk.js.map",
     "runtime-main.js": "/Melhem/static/js/runtime-main.87e1b288.js",
     "runtime-main.js.map": "/Melhem/static/js/runtime-main.87e1b288.js.map",
     "static/js/2.663b721c.chunk.js": "/Melhem/static/js/2.663b721c.chunk.js",
@@ -21,12 +21,13 @@
     "static/media/background_header.e1fe789f.JPG": "/Melhem/static/media/background_header.e1fe789f.JPG",
     "static/media/logo.7dbc68fc.png": "/Melhem/static/media/logo.7dbc68fc.png",
     "static/media/logo2.f2c49007.png": "/Melhem/static/media/logo2.f2c49007.png",
+    "static/media/message.87b7dc0b.jpg": "/Melhem/static/media/message.87b7dc0b.jpg",
     "static/media/robofriends.181704c9.jpg": "/Melhem/static/media/robofriends.181704c9.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.87e1b288.js",
     "static/js/2.663b721c.chunk.js",
     "static/css/main.0c2a516d.chunk.css",
-    "static/js/main.dc35bfb3.chunk.js"
+    "static/js/main.6f450e38.chunk.js"
   ]
 }
