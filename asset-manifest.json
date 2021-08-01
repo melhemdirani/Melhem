@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/Melhem/static/css/main.297507d3.chunk.css",
-    "main.js": "/Melhem/static/js/main.616aec40.chunk.js",
-    "main.js.map": "/Melhem/static/js/main.616aec40.chunk.js.map",
-    "runtime-main.js": "/Melhem/static/js/runtime-main.cb01c1cd.js",
-    "runtime-main.js.map": "/Melhem/static/js/runtime-main.cb01c1cd.js.map",
+    "main.css": "/Melhem/static/css/main.48777733.chunk.css",
+    "main.js": "/Melhem/static/js/main.0db60198.chunk.js",
+    "main.js.map": "/Melhem/static/js/main.0db60198.chunk.js.map",
+    "runtime-main.js": "/Melhem/static/js/runtime-main.4263e912.js",
+    "runtime-main.js.map": "/Melhem/static/js/runtime-main.4263e912.js.map",
     "static/js/2.a7a58103.chunk.js": "/Melhem/static/js/2.a7a58103.chunk.js",
     "static/js/2.a7a58103.chunk.js.map": "/Melhem/static/js/2.a7a58103.chunk.js.map",
-    "static/js/3.1b6e627b.chunk.js": "/Melhem/static/js/3.1b6e627b.chunk.js",
-    "static/js/3.1b6e627b.chunk.js.map": "/Melhem/static/js/3.1b6e627b.chunk.js.map",
     "index.html": "/Melhem/index.html",
-    "static/css/main.297507d3.chunk.css.map": "/Melhem/static/css/main.297507d3.chunk.css.map",
+    "static/css/main.48777733.chunk.css.map": "/Melhem/static/css/main.48777733.chunk.css.map",
     "static/js/2.a7a58103.chunk.js.LICENSE.txt": "/Melhem/static/js/2.a7a58103.chunk.js.LICENSE.txt",
     "static/media/Adventure.539a30b4.png": "/Melhem/static/media/Adventure.539a30b4.png",
     "static/media/Linkedin.8d252ee3.png": "/Melhem/static/media/Linkedin.8d252ee3.png",
@@ -26,9 +24,9 @@
     "static/media/robofriends.8a12a4cd.jpg": "/Melhem/static/media/robofriends.8a12a4cd.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.cb01c1cd.js",
+    "static/js/runtime-main.4263e912.js",
     "static/js/2.a7a58103.chunk.js",
-    "static/css/main.297507d3.chunk.css",
-    "static/js/main.616aec40.chunk.js"
+    "static/css/main.48777733.chunk.css",
+    "static/js/main.0db60198.chunk.js"
   ]
 }
