@@ -9,10 +9,10 @@
     opacity: .7;
     border-radius: 25px;
     cursor: pointer;
-
 }
-
-
+.hidden{
+    display: none;
+}
 .primary_button:hover{
     opacity: .9;
 }
@@ -37,19 +37,20 @@
         font-size: 10px;
         opacity: 1;
         padding: 5px;   
-      
+        
     }
     .scrollspy{
         display: flex;
         flex-direction: column;
     }
-
 } 
+
 html {
     scroll-behavior: smooth;
 }  
 hr {
     width: 100%;
+    opacity: .3;
 }
 .App{
     font-family: 'Poppins', sans-serif;
@@ -62,19 +63,22 @@ a{
 }
 .resume_button{
     background: transparent;
-    color: gray;
+    color: rgb(0,128,128);
     border: none;
-    position: fixed;
-    top: 40px ;
-    right: 40px;
     transform: scale(2);
     opacity: .4;
     cursor: pointer;
+    position: sticky;
+    top: 30px;
 }
 .resume_button:hover{
-    color: rgb(0,128,128);
+    color: gray;
     opacity: 1
 }
 input:focus, textarea:focus, select:focus{
     outline: none;
+}
+.flex{
+    display: flex;
+    align-items: flex-start;
 }

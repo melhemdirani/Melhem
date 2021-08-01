@@ -43,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
         height: "100px",
         fontSize: "17px",
         border: "none",
+        borderRadius: "0",
         backgroundColor: "rgba(248, 249, 250,1)",
         borderBottom: "1px solid black",
 
@@ -52,9 +53,9 @@ const useStyles = makeStyles((theme) => ({
         height: "100px",
         fontSize: "17px",
         border: "none",
+        borderRadius: "0",
         backgroundColor: "rgba(248, 249, 250,1)",
         borderBottom: "1px solid teal",
-
     },
     submitButton:{
         backgroundColor: "white",
@@ -122,35 +123,45 @@ const useStyles = makeStyles((theme) => ({
             marginRight: "0",
         },
         text:{
-           marginTop: "70px",
+           marginTop: "30px",
            fontSize: "14px",
 
         },
     },
     [theme.breakpoints.down('xs')]: {
+        
         title: {
-            fontSize: '20px',
+            fontSize: '18px',
+            marginBottom: "30px"
         },
         inputs:{
-            fontSize: "11px",
+            fontSize: "9px",
+            height: "15px"
         },
         labels:{
-            fontSize: "11px",
+            fontSize: "9px",
+            marginTop: "5px",
         },
         messageInput:{
-            fontSize: "11px"
+            fontSize: "11px",
+            height: "75px"
+
         },
         submitButton:{
             fontSize: "12px",
-            width: "90px"
+            width: "80px",
+            height: "25px"
         },
         contactForm: {
             width: '270px'
         },
         text:{
             fontSize: "12px",
-
+            width: '270px'
         },
+        image:{
+            width: "200px",
+        }
     },
     [theme.breakpoints.down('340')]:{
         title: {

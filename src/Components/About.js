@@ -2,6 +2,8 @@ import React  from 'react';
 import ProfilePic from '../images/ProfilePic.png';
 import { makeStyles } from "@material-ui/core";
 import clsx from 'clsx';
+import resume from "../Resume.pdf"
+import GetAppIcon from '@material-ui/icons/GetApp';
     
 const useStyles = makeStyles((theme) => ({
     about: {
@@ -10,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
       justifyContent: 'center',
       alignItems: 'center',
       padding: '60px',
-      backgroundColor: "rgba(102, 101, 101, .1)",
+      backgroundColor: "white"
     },
     flex:{
         display: "flex",
@@ -79,10 +81,16 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: "70px"
     },
     text1: {
+        fontWeight: "900",
         fontSize: '35px',
     },
     text2: {
         fontSize: '15px'
+    },
+    button:{
+        display: "flex",
+        alignItems: "center",
+        marginLeft: "10px"
     },
     
     [theme.breakpoints.down('1310')]:{
@@ -177,6 +185,9 @@ const useStyles = makeStyles((theme) => ({
         skills:{
             width: "220px"
         },
+        flex2:{
+            columnGap: 0
+        }
     },
     ["@media only screen and (max-width: 850px) and (max-height: 550px) "]:{    
         profilepic: {
@@ -184,7 +195,7 @@ const useStyles = makeStyles((theme) => ({
         },
     }
 }))
-function About({showResume}) {
+function About() {
 
     const { about,profilepic,aboutme,skills,text1,text2, button,flex, progress,progress2,progress3,progress4,progress5,progress6,progress7,progress8,progress9,progress10, flex2} = useStyles()
     return (
@@ -217,9 +228,8 @@ function About({showResume}) {
                         <div className={progress10} />
                     </div>
                     <div className={flex2}>
-                        <a className={clsx(button, "primary_button")} href="#contact" onClick={showResume}> My Resume</a>
                         <a className="secondary_button" href="#contact"> Hire Me</a>
-
+                        <a className={clsx(button, "primary_button")} href={resume} download > Resume <GetAppIcon /></a>
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        backgroundColor: "rgba(248, 249, 250,1)",
+        backgroundColor: "rgba(102, 101, 101, .1)",
         paddingBottom: "40px"
     },
     projects_title:{
@@ -16,6 +16,8 @@ const useStyles = makeStyles((theme) => ({
         padding: "50px 0",
         color: "black",
         fontSize: "35px",
+        fontWeight: "900",
+
     },
     [theme.breakpoints.down('1000')]:{
         projects_title:{

@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     },
     mobile_nav:{
         display: "flex",
-        width: "100%",
+        width: "50%",
         flexDirection: "column",
         marginTop: "0px",
         marginRight:"-50px",
@@ -62,9 +62,9 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "10px",
         fontWeight: "700",
         color: "white",
-        marginLeft: "-160px",
         marginBottom: "20px",
-        padding: "10px"
+        padding: "10px",
+        marginRight: "100px"
     },
     header_body:{
         alignSelf: "flex-start",
@@ -165,9 +165,9 @@ const useStyles = makeStyles((theme) => ({
             color: "teal"
         },
         headerLogo:{
-            marginLeft: "-170px",
+            marginLeft: "-50px",
             height: "30px",
-            marginTop:" 50px"
+            marginTop:" 50px",
         },
         header:{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),  url(${background2})`,
@@ -213,12 +213,9 @@ const useStyles = makeStyles((theme) => ({
         p:{
             fontSize: "12px"
         },
-        menuItems_Mobile:{
-            marginLeft: "-120px"
-        },
+  
         headerLogo:{
-            marginLeft: "-130px"
-
+            marginRight: "5px"
         }
 
     },
@@ -237,6 +234,7 @@ const useStyles = makeStyles((theme) => ({
             fontSize: "10px",
             marginTop: "-30px"
         },
+
         
     },
     ["@media only screen and (max-width: 653px) and (max-height: 320px) "]:{
@@ -246,6 +244,7 @@ const useStyles = makeStyles((theme) => ({
         header_body:{
             marginTop: "80px",
         },
+     
     },
     ["@media only screen and (width: 1024px) and (height: 1366px) "]:{
         header_body:{
@@ -304,13 +303,14 @@ function Header({showResume}) {
         sectionChange,
         headerLogo
     } = useStyles()
-    
+   
     const NavBar = ({styles, itemsStyles}) => {
         return (
             <div  className={styles}>
                 <a  href="#header" > <img src={colorChange? logo : logo2} alt="" className={headerLogo}/> </a>
+                {width < 600 ? <hr /> : null}
                 <Scrollspy items={ ['header', 'about','projects','contact', 'resume'] } currentClassName={sectionChange}  className="scrollspy" >
-                    <a  href="#header   "/>
+                    <a  href="#header   " className="hidden"> none </a>
                     <a className={itemsStyles} href="#about">About</a>
                     <a className={itemsStyles} href="#projects">Projects</a>
                     <a className={itemsStyles} href="#contact">Contact</a>

@@ -4,7 +4,6 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Projects from './Components/Projects';
 import About from './Components/About';
-import CancelIcon from '@material-ui/icons/Cancel'
 import Resume from './Components/Resume';
 import ContactForm from './Components/ContactForm';
 
@@ -19,10 +18,7 @@ function App() {
   return (
     <div className="App">
       { cv ===  true ?
-      <div>
-        <Resume />
-        <button className="resume_button" onClick={showResume}> <CancelIcon/></button>
-      </div>
+        <Resume showResume={showResume}/>
       :
       <div>
         <Header showResume={showResume}/>
