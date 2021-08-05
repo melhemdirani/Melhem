@@ -78,7 +78,7 @@ a{
 input:focus, textarea:focus, select:focus{
     outline: none;
 }
-.flex{
+.resume_container{
     display: flex;
     align-items: flex-start;
 }

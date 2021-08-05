@@ -26,46 +26,6 @@ const useStyles = makeStyles((theme) => ({
         backgroundPosition: "top"
     },
 
-    header_nav:{
-        display: "flex",
-        height: "50px",
-        marginTop: "0",
-        justifyContent: "center",
-        alignItems: "center",
-        position: "fixed",
-        fontWeight: "900",
-        width: "100%",
-        borderBottom: "1px solid rgba(255,255,255,0.3)",
-        [theme.breakpoints.down('xs')]: {
-            display:"none",
-        },
-    },
-    mobile_nav:{
-        display: "flex",
-        width: "50%",
-        flexDirection: "column",
-        marginTop: "0px",
-        marginRight:"-50px",
-        position: "fixed",
-        alignItems:"center",
-        backgroundColor: "rgba(0,0,0,0.9)",
-        right: "35px",
-    },
-    menuItems:{
-        fontSize: "12px",
-        margin: "0px 55px 10px -10px",
-        paddingTop: "10px",
-        fontWeight: "900",
-        borderRadius: "20px",
-    },
-    menuItems_Mobile:{
-        fontSize: "10px",
-        fontWeight: "700",
-        color: "white",
-        marginBottom: "20px",
-        padding: "10px",
-        marginRight: "100px"
-    },
     header_body:{
         alignSelf: "flex-start",
         justifySelf: "center",
@@ -92,48 +52,9 @@ const useStyles = makeStyles((theme) => ({
     button:{
         marginTop:"0px",
     },
-    menuIcon:{
-        margin:"14px",
-        marginRight: "-10px",
-        color: "white",
-        fontSize:"30px",
-        [theme.breakpoints.up('sm')]: {
-            display: "none"
-        },
-
-    },
-    menuButton:{
-        right: "20px",
-        position: "fixed",
-
-    },
-    menuIcon_change:{
-        color: "black"
-    },
-    nav_background:{
-        backgroundColor: "rgba(255,255,255,1)",
-        zIndex: "9999",
-    },
-    nav_change:{
-        color: "black",
-        '&:hover': {
-            backgroundColor: "rgba(255,255,255,1)",
-            color: "teal"
-        },
-    },
-    sectionChange:{
-        borderBottom: "2px solid teal",
-        paddingBottom: "7px",
-        borderRadius: 0
-    },
-    headerLogo:{
-        height: "40px",
-        marginRight: "200px",
-    },
+ 
+   
     [theme.breakpoints.down('1033')]: {
-        headerLogo:{
-            marginRight: "100px",
-        },
         h1:{
             fontSize: "45px"
         },
@@ -148,27 +69,12 @@ const useStyles = makeStyles((theme) => ({
         p:{
             fontSize: "25px"
         },
-        headerLogo:{
-            marginRight: "40px",
-        },
-        menuItems:{
-            margin: "0px 35px 10px -10px"
-        },
         header_body:{
             margin: "300px 30px 200px 40px"
         },
     
     },
     [theme.breakpoints.down('xs')]: {
-        sectionChange:{
-            borderBottom: "none",
-            color: "teal"
-        },
-        headerLogo:{
-            marginLeft: "-50px",
-            height: "30px",
-            marginTop:" 50px",
-        },
         header:{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),  url(${background2})`,
             backgroundAttachment: "scroll"
@@ -179,10 +85,6 @@ const useStyles = makeStyles((theme) => ({
         },
         h1:{
             fontSize: "27px",
-        },
-        button:{
-            marginTop:"60px",
-
         },
         header_body:{
             marginTop: "300px"
@@ -195,11 +97,6 @@ const useStyles = makeStyles((theme) => ({
         },
         h1:{
             fontSize: "24px",
-        },
-    
-        button:{
-            marginTop:"0px",
-
         },
         header_body:{
             marginTop: "200px",
@@ -230,12 +127,6 @@ const useStyles = makeStyles((theme) => ({
         h1:{
             fontSize: "30px",
         },
-        button:{
-            fontSize: "10px",
-            marginTop: "-30px"
-        },
-
-        
     },
     ["@media only screen and (max-width: 653px) and (max-height: 320px) "]:{
         button:{
@@ -255,77 +146,18 @@ const useStyles = makeStyles((theme) => ({
 
 }))
 
-function Header({showResume}) { 
-    const { height, width } = useWindowDimensions();
-    const [colorChange, setColorchange] = useState(false);
-    const [open, setOpen] = useState(false)
-
-    const changeNavbarColor = () =>{
-        if(window.scrollY >= 10){
-            setColorchange(true);
-        }
-        else{
-            setColorchange(false);
-        }
-    };
-    window.addEventListener('scroll', changeNavbarColor);
-
-    useEffect(() => {
-        if (width > 600){
-            setOpen(false)
-        }
-       
-    }, [height, width])
-    const toggleMenu = () => {
-        setOpen(!open)
-    };
-    const closeMenu = () => {
-        if(open){
-        setOpen(false)
-        }
-    };
+function Header() { 
 
     const { 
         header, 
-        header_nav, 
-        mobile_nav, 
         header_body, 
         h1, 
         p, 
-        button, 
-        menuIcon, 
-        menuButton, 
-        menuItems_Mobile, 
-        menuItems,
-        nav_background,
-        nav_change,
-        menuIcon_change, 
-        sectionChange,
-        headerLogo
+        button
     } = useStyles()
    
-    const NavBar = ({styles, itemsStyles}) => {
-        return (
-            <div  className={styles}>
-                <a  href="#header" > <img src={colorChange? logo : logo2} alt="" className={headerLogo}/> </a>
-                {width < 600 ? <hr /> : null}
-                <Scrollspy items={ ['header', 'about','projects','contact', 'resume'] } currentClassName={sectionChange}  className="scrollspy" >
-                    <a  href="#header   " className="hidden"> none </a>
-                    <a className={itemsStyles} href="#about">About</a>
-                    <a className={itemsStyles} href="#projects">Projects</a>
-                    <a className={itemsStyles} href="#contact">Contact</a>
-                    <a className={itemsStyles} href="#resume" onClick={showResume}>Resume</a>
-                </Scrollspy>
-            </div>
-        )
-    }
     return (
-    <div className={header}  onClick={closeMenu}  id="header"  >
-        { open === true && <NavBar styles={mobile_nav} itemsStyles={menuItems_Mobile}/> }   
-        <div className={menuButton} onClick={toggleMenu} >
-            {open ? <ClearIcon className={ menuIcon}/> : <MenuIcon className={colorChange ? clsx(menuIcon_change, menuIcon) : menuIcon}/>}   
-        </div>
-        <NavBar styles={colorChange ? clsx(nav_background, header_nav) : header_nav} itemsStyles={colorChange ? clsx(nav_change, menuItems) : menuItems}/>
+    <div className={header} id="header"  >
         <div className={header_body} >
             <h1 className={h1}>Hello I'm Melhem El Dirani,</h1>
             <p className={p}>And I build things for the web</p>

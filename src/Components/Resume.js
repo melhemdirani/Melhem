@@ -11,7 +11,7 @@ const Resume = ({showResume}) => {
   const pageNumber = 1
 
   return (
-    <div className="flex">
+    <div className="resume_container">
 
       <Document
         file={resume}

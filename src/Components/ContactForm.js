@@ -259,7 +259,7 @@ const ContactForm = () =>{
 
             <div className={second_row}>
                 <div className={first_column}>
-                <p className={text}>Interested in working together? Or perhaps you would just like to say hi, leave a message bellow.</p>
+                <p className={text}>Interested in working together? Or perhaps you would just like to say hi ; leave a message bellow.</p>
 
                     <form onSubmit={handleSubmit} className={contactForm}>
                         <label id="name-label" className={clsx(styling, labels)} > Name </label> 
