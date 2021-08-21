@@ -80,8 +80,8 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     sectionChange:{
-            paddingBottom: "7px",
-            color: "rgb(93,174,190)"
+        paddingBottom: "7px",
+        color: "rgb(93,174,190)"
     },
     headerLogo:{
         height: "40px",
@@ -170,8 +170,8 @@ function Navbar({ showResume }) {
             <div  className={styles}>
                 <a  href="#header" > <img src={colorChange && width > 600 ? logo : logo2} alt="" className={headerLogo}/> </a>
                 {width < 600 ? <hr /> : null}
-                <Scrollspy items={ ['header', 'about','projects','contact', 'resume'] } currentClassName={ colorChange && sectionChange}  className="scrollspy" >
-                    <a className={itemsStyles} href="#header">home </a>   
+                <Scrollspy items={ ['header', 'about','projects','contact', 'resume'] } currentClassName={`${sectionChange}`}  className="scrollspy" >
+                    <a style={{display: "none"}} href="#header">home </a>   
                     <a className={itemsStyles} href="#about">About</a>
                     <a className={itemsStyles} href="#projects">Projects</a>
                     <a className={itemsStyles} href="#contact">Contact</a>

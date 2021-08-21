@@ -1,14 +1,9 @@
-import React , {useState, useEffect} from 'react';
+import React  from 'react';
 import { makeStyles } from "@material-ui/core";
 import clsx from 'clsx';
-import MenuIcon from '@material-ui/icons/Menu';
 import background from '../images/background_header.JPG'
 import background2 from '../images/background_header2.JPG'
-import useWindowDimensions from './windowDimensions'
-import Scrollspy from 'react-scrollspy'
-import logo from "../images/logo.png"
-import logo2 from "../images/logo2.png"
-import ClearIcon from '@material-ui/icons/Clear';
+
 
 const useStyles = makeStyles((theme) => ({
     header: {
