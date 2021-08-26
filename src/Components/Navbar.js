@@ -7,7 +7,6 @@ import Scrollspy from 'react-scrollspy'
 import logo from "../images/logo.png"
 import logo2 from "../images/logo2.png"
 import ClearIcon from '@material-ui/icons/Clear';
-import resume from "../Resume.pdf"
 
 const useStyles = makeStyles((theme) => ({
 
@@ -175,12 +174,11 @@ function Navbar() {
             <div  className={styles}>
                 <a  href="#header" > <img src={colorChange && width > 600 ? logo : logo2} alt="" className={headerLogo}/> </a>
                 {width < 600 ? <hr /> : null}
-                <Scrollspy items={ ['header', 'about','projects','contact', 'resume'] } currentClassName={`${sectionChange}`}  className="scrollspy" >
+                <Scrollspy items={ ['header', 'about','projects','contact'] } currentClassName={`${sectionChange}`}  className="scrollspy" >
                     <a style={{display: "none"}} href="#header">home </a>   
                     <a className={itemsStyles} href="#about">About</a>
                     <a className={itemsStyles} href="#projects">Projects</a>
                     <a className={itemsStyles} href="#contact">Contact</a>
-                    <a className={itemsStyles} href={resume} download >Resume </a>
                 </Scrollspy>
             </div>
         )
