@@ -61,24 +61,12 @@ a{
     letter-spacing: 0.15em;
     font-size: .9em;
 }
-.resume_button{
-    background: transparent;
-    color: rgb(0,128,128);
-    border: none;
-    transform: scale(2);
-    opacity: .4;
-    cursor: pointer;
-    position: sticky;
-    top: 30px;
-}
-.resume_button:hover{
-    color: gray;
-    opacity: 1
-}
+
 input:focus, textarea:focus, select:focus{
     outline: none;
 }
-.resume_container{
+.resume{
     display: flex;
-    align-items: flex-start;
+    padding: 30px;
+    justify-content: center;
 }
