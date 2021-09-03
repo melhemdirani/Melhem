@@ -20,11 +20,11 @@ const useStyles = makeStyles((theme) => ({
         overflow:"hidden",
     },
     projectimg:{
-        boxShadow: "0px 4px 4px rgb(0,128,128)",
+        boxShadow: "0 2px 2px gray",
         width:"800px",
         '&:hover': {
-            transform: "scale(1.2)",
-            WebkitTransition: "transform .5s ease-in-out"
+            transform: "scale(1.1)",
+            WebkitTransition: "transform 1s ease-in-out"
         },
     },
     project_description:{
@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     },
     link_a:{
         color: "teal",
-        border: "2px solid teal",
+        border: "1px solid teal",
         marginRight: "20px",
         fontSize:"14px",
         padding: "5px",
@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     },
     link_b:{
         color: "white",
-        border: "2px solid teal",
+        border: "1px solid teal",
         marginRight: "20px",
         fontSize:"14px",
         padding: "5px",
