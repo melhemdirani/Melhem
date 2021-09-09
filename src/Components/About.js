@@ -28,45 +28,11 @@ const useStyles = makeStyles((theme) => ({
 
     },
     progress:{
-        width: "95%",
         borderBottom: "2px solid rgba(0, 128, 128, 1)",
         fontSize: '15px'
-
     },
     progress2:{
         width: "5%",
-        borderBottom: "2px solid rgba(0, 128, 128, .2)"
-    },
-    progress3:{
-        width: "95%",
-        borderBottom: "2px solid rgba(0, 128, 128, 1)"
-    },
-    progress4:{
-        width: "5%",
-        borderBottom: "2px solid rgba(0, 128, 128, .2)"
-    },
-    progress5:{
-        width: "95%",
-        borderBottom: "2px solid rgba(0, 128, 128, 1)"
-    },
-    progress6:{
-        width: "5%",
-        borderBottom: "2px solid rgba(0, 128, 128, .2)"
-    },
-    progress7:{
-        width: "95%",
-        borderBottom: "2px solid rgba(0, 128, 128, 1)"
-    },
-    progress8:{
-        width: "10%",
-        borderBottom: "2px solid rgba(0, 128, 128, .2)"
-    },
-    progress9:{
-        width: "70%",
-        borderBottom: "2px solid rgba(0, 128, 128, 1)"
-    },
-    progress10:{
-        width: "30%",
         borderBottom: "2px solid rgba(0, 128, 128, .2)"
     },
     profilepic: {
@@ -168,15 +134,12 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     [theme.breakpoints.down('440')]:{
-
-
         aboutme: {
             width: "300px",
         },
         skills:{
             width: "300px"
         },
- 
     },
     [theme.breakpoints.down('340')]:{
         aboutme: {
@@ -195,9 +158,19 @@ const useStyles = makeStyles((theme) => ({
         },
     }
 }))
+
+const Skill = ({skill, prog1, prog2 }) => {
+    const {text2,flex, progress,progress2} = useStyles()
+    return(
+        <div className={flex}>
+            <div className={progress} style={{width: prog1}}> <p className={text2}>{skill}</p> </div>
+            <div className={progress2} style={{width: prog2}} />
+        </div>
+    )
+}
 function About() {
 
-    const { about,profilepic,aboutme,skills,text1,text2, button,flex, progress,progress2,progress3,progress4,progress5,progress6,progress7,progress8,progress9,progress10, flex2} = useStyles()
+    const { about,profilepic,aboutme,skills,text1,text2, button, flex2} = useStyles()
     return (
  
         <div className={about} id="about">
@@ -207,26 +180,11 @@ function About() {
                 <p className={text2}>I discovered my passion for web development in the middle of the 2020 pandemic, quitted my teaching job and dived into the IT field.</p>  
                 <p className={text2}>Innovative Front End Developer with experience in building and maintaining responsive websites. Proficient in HTML, CSS, JavaScript and React; plus modern libraries and frameworks. </p>
                 <div className={skills}>
-                    <div className={flex}>
-                        <div className={progress}> <p className={text2}>HTML5</p> </div>
-                        <div className={progress2} />
-                    </div>
-                    <div className={flex}>
-                        <div className={progress3}>  <p className={text2}>CSS3</p></div>
-                        <div className={progress4} />
-                    </div>
-                    <div className={flex}>
-                        <div className={progress5}> <p className={text2}>JavaScript</p> </div>
-                        <div className={progress6} />
-                    </div>
-                    <div className={flex}>
-                        <div className={progress7}> <p className={text2}>React</p> </div>
-                        <div className={progress8} />
-                    </div>
-                    <div className={flex}>
-                        <div className={progress9}> <p className={text2}>Firebase</p> </div>
-                        <div className={progress10} />
-                    </div>
+                    <Skill skill="HTML5" prog1="95%" prog2="5%" />
+                    <Skill skill="CSS3" prog1="95%" prog2="5%" />
+                    <Skill skill="React" prog1="90%" prog2="10%" />
+                    <Skill skill="Redux" prog1="85%" prog2="15%" />
+                    <Skill skill="Firebase" prog1="70%" prog2="30%" />
                     <div className={flex2}>
                         <a className="secondary_button" href="#contact"> Hire Me</a>
                         <a className={clsx(button, "primary_button")} href={resume} download > Resume <GetAppIcon /></a>
