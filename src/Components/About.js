@@ -7,17 +7,13 @@ import GetAppIcon from '@material-ui/icons/GetApp';
     
 const useStyles = makeStyles((theme) => ({
     about: {
-      height: 'auto' ,
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      padding: '60px',
-      backgroundColor: "white"
-    },
-    flex:{
-        display: "flex",
-        marginBottom: "10px",
-        marginTop: "20px"
+        color: "rgba(0,0,0,0.7)",
+        height: 'auto' ,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: '60px',
+        backgroundColor: "white"
     },
     flex2:{
         display: "flex",
@@ -27,18 +23,11 @@ const useStyles = makeStyles((theme) => ({
         marginTop: "30px"
 
     },
-    progress:{
-        borderBottom: "2px solid rgba(0, 128, 128, 1)",
-        fontSize: '15px'
-    },
-    progress2:{
-        width: "5%",
-        borderBottom: "2px solid rgba(0, 128, 128, .2)"
-    },
     profilepic: {
         height: '700px',
         width: 'auto',
         borderRadius: "5px",
+        alignSelf: "flex-start"
     },
     aboutme: {
         textAlign: 'left',
@@ -49,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
     text1: {
         fontWeight: "900",
         fontSize: '35px',
+        color: "black"
     },
     text2: {
         fontSize: '15px'
@@ -67,43 +57,33 @@ const useStyles = makeStyles((theme) => ({
         text1: {
             fontSize: '30px'
         },
-        text2: {
-            fontSize: '15px',
-        },
         aboutme: {
             width: "90%",
         },
     },
   
     [theme.breakpoints.down('1030')]:{
-        flex:{
-            margin: 0
-        },
- 
         profilepic: {
             height: "550px",
-
+            alignSelf: "center"
         },
         about: {
             columnGap: '40px',
+            flexDirection: "column",
+
         },
   
     },
     [theme.breakpoints.down('900')]: {
         about:{
-            rowGap: "100px",
-            flexDirection: "column",
         },
         text1: {
             fontSize: '20px',
             width: "150px"
         },
-        text2: {
-            fontSize: '15px',
-        },
-     
         profilepic: {
             height: "600px",
+
         },
         aboutme: {
             width: "450px",
@@ -159,15 +139,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }))
 
-const Skill = ({skill, prog1, prog2 }) => {
-    const {text2,flex, progress,progress2} = useStyles()
-    return(
-        <div className={flex}>
-            <div className={progress} style={{width: prog1}}> <p className={text2}>{skill}</p> </div>
-            <div className={progress2} style={{width: prog2}} />
-        </div>
-    )
-}
+
 function About() {
 
     const { about,profilepic,aboutme,skills,text1,text2, button, flex2} = useStyles()
@@ -177,14 +149,10 @@ function About() {
             <img className={profilepic} src={ProfilePic} alt="Melhem" />
             <div  className={aboutme}>  
                 <h1 className={text1} >ABOUT ME</h1>
-                <p className={text2}>I discovered my passion for web development in the middle of the 2020 pandemic, quitted my teaching job and dived into the IT field.</p>  
-                <p className={text2}>Innovative Front End Developer with experience in building and maintaining responsive websites. Proficient in HTML, CSS, JavaScript and React; plus modern libraries and frameworks. </p>
+                <p className={text2}>I’m a self-taught web developer who is so passionate about coding that he quitted his job and dived into the IT field without any hesitation. </p>
+                <p className={text2}> My journey began after I stumbled upon a course called the complete web developer zero to mastery offered by Zero to Mastery Academy. After I started my first course, I couldn’t stop coding and learning. One course led to another and here I am.  </p>
+                <p className={text2}> About one year after I started learning web development, I was given the opportunity to do a remote Internship with a company called Sicilia Mia based in Sicily, Italy. During my internship, I've worked alongside senior designers and developers who have raised my standards for what’s expected of any web application. Moreover, I am an active member on a team on Slack where we build web application to gain experience and grow in this field. Finally, I also work as a tutor and mentor where I teach web development and guide new students in their journey.  </p>
                 <div className={skills}>
-                    <Skill skill="HTML5" prog1="95%" prog2="5%" />
-                    <Skill skill="CSS3" prog1="95%" prog2="5%" />
-                    <Skill skill="React" prog1="90%" prog2="10%" />
-                    <Skill skill="Redux" prog1="85%" prog2="15%" />
-                    <Skill skill="Firebase" prog1="70%" prog2="30%" />
                     <div className={flex2}>
                         <a className="secondary_button" href="#contact"> Hire Me</a>
                         <a className={clsx(button, "primary_button")} href={resume} download > Resume <GetAppIcon /></a>

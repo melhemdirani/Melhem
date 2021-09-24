@@ -80,7 +80,7 @@ export const projects=[
     projectName:"Crwn Clothing",
     link:"https://melhemdirani.github.io/crwn-clothing/",
     link2:"https://github.com/melhemdirani/crwn-clothing",
-    description:"An E-Commerce demo website built with react, redux, Sass and firebase."
+    description:"An E-Commerce demo website built with react, redux, Sass and firebase. The website allows the user to sign in via google or to register manually. The user can add items to cart while shopping and pay using stripe checkout."
   },
   {
     id: 10,
@@ -88,7 +88,7 @@ export const projects=[
     projectName:"Smart Brain",
     link:"https://melhemdirani.github.io/smart-brain/",
     link2:"https://github.com/melhemdirani/smart-brain",
-    description:"A website that uses Clarifi API to detect a face on a given image. built with React.Js, Redux and Tachyons"
+    description:"A website that uses Clarifi API to detect a face on a given image. All the user has to do is add a link for a photo and the application will draw a box around a detected face in the photo. Built with React.Js, Redux and Tachyons"
   },
   {
     id: 11,
@@ -96,7 +96,7 @@ export const projects=[
     projectName: "Restaurant-Confusion",
     link:"https://melhemdirani.github.io/Restaurant-Confusion/",
     link2:"https://github.com/melhemdirani/Restaurant-Confusion/tree/master",
-    description:"A restaurant website built with React, Redux and Reactstrap",
+    description:"A restaurant website built with React, Redux and Reactstrap. The website allows the user to browse through the dishes in the restaurant as well as view the rating for each dish.",
   },
   {
     id: 12,
@@ -104,7 +104,7 @@ export const projects=[
     projectName: "Linkedin-Clone",
     link:"https://melhemdirani.github.io/Linkedin-clone/",
     link2:"https://github.com/melhemdirani/Linkedin-clone",
-    description:"A Linkedin Demo clone that was built using React.js, Redux, Firebase and Material-UI",
+    description:"A Linkedin Demo clone that was built using React.js, Redux, Firebase and Material-UI. This demo allows the user to register or sign in to a registered account. After the user signs in he can view the posts section and add a post of his own.",
   },
   {   
     id: 13,
