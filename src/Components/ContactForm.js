@@ -254,7 +254,7 @@ const ContactForm = () =>{
         setMessage('');
     }
     return(
-        <div className={container} onClick={resetBorder}  id="contact" >
+        <div className={container}  id="contact" >
                 <h1 className={title} > CONTACT ME </h1>
 
             <div className={second_row}>
@@ -269,8 +269,8 @@ const ContactForm = () =>{
                             value={name}
                             onChange={ (e) => setName(e.target.value) }
                             className={clsx(styling, inputs)}
-                            onClick={handleChange}
-
+                            onFocus={handleChange}
+                            onBlur={resetBorder}
                         />
                         <label id="email-label" className={clsx(styling2, labels)} > Email </label>
                         <input type="email" 
@@ -279,7 +279,8 @@ const ContactForm = () =>{
                             value={email} 
                             onChange={ (e) => setEmail(e.target.value)}
                             className={clsx(styling2, inputs)}
-                            onClick={handleChange2}
+                            onFocus={handleChange2}
+                            onBlur={resetBorder}
                         />
                         <label id="message" className={clsx(styling3, labels)}  > Message </label>
                         <textarea  
@@ -287,8 +288,8 @@ const ContactForm = () =>{
                             value={message} 
                             onChange={ (e) => setMessage(e.target.value)}
                             className={clsx(styling3, messageInput)}
-                            onClick={handleChange3}
-
+                            onFocus={handleChange3}
+                            onBlur={resetBorder}
                         /> 
                         <button type="submit" className={submitButton} >Send</button>
                     </form>
