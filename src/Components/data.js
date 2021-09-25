@@ -87,7 +87,7 @@ export const projects=[
     image: Smartbrain,
     projectName:"Smart Brain",
     link:"https://melhemdirani.github.io/smart-brain/",
-    link2:"https://github.com/melhemdirani/smart-brain",
+    link2:"https://github.com/melhemdirani/smart-brain/tree/main",
     description:"A website that uses Clarifi API to detect a face on a given image. All the user has to do is add a link for a photo and the application will draw a box around a detected face in the photo. Built with React.Js, Redux and Tachyons"
   },
   {
@@ -103,7 +103,7 @@ export const projects=[
     image: Linkedin,
     projectName: "Linkedin-Clone",
     link:"https://melhemdirani.github.io/Linkedin-clone/",
-    link2:"https://github.com/melhemdirani/Linkedin-clone",
+    link2:"https://github.com/melhemdirani/Linkedin-clone/tree/main",
     description:"A Linkedin Demo clone that was built using React.js, Redux, Firebase and Material-UI. This demo allows the user to register or sign in to a registered account. After the user signs in he can view the posts section and add a post of his own.",
   },
   {   
@@ -111,7 +111,7 @@ export const projects=[
     image: Adventure,
     projectName: "Visit Lebanon",
     link:"https://melhemdirani.github.io/Visit-Lebanon",
-    link2:"https://github.com/melhemdirani/visit-lebanon",
+    link2:"https://github.com/melhemdirani/visit-lebanon/tree/main",
     description:"A demo website of a travel company that is promoting touristic places in Lebanon. Built using React ",
 
   },
@@ -120,7 +120,7 @@ export const projects=[
     image: robofriends,
     projectName:"RoboFriends",
     link:"https://melhemdirani.github.io/robofriends",
-    link2:"https://github.com/melhemdirani/robofriends",
+    link2:"https://github.com/melhemdirani/robofriends/tree/main",
     description:"A fun project that was part of my lesson plan with Zero To Mastery Academy built with React.js"
   }
 
