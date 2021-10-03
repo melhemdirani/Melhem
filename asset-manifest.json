@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Melhem/static/css/main.8facefe0.chunk.css",
-    "main.js": "/Melhem/static/js/main.26291d5f.chunk.js",
-    "main.js.map": "/Melhem/static/js/main.26291d5f.chunk.js.map",
+    "main.js": "/Melhem/static/js/main.3a960336.chunk.js",
+    "main.js.map": "/Melhem/static/js/main.3a960336.chunk.js.map",
     "runtime-main.js": "/Melhem/static/js/runtime-main.4263e912.js",
     "runtime-main.js.map": "/Melhem/static/js/runtime-main.4263e912.js.map",
     "static/js/2.cea56041.chunk.js": "/Melhem/static/js/2.cea56041.chunk.js",
@@ -18,6 +18,8 @@
     "static/media/Smartbrain.155ce456.jpg": "/Melhem/static/media/Smartbrain.155ce456.jpg",
     "static/media/background_header.6c775e8a.JPG": "/Melhem/static/media/background_header.6c775e8a.JPG",
     "static/media/background_header2.babb091f.JPG": "/Melhem/static/media/background_header2.babb091f.JPG",
+    "static/media/beds24.f0daa6fe.png": "/Melhem/static/media/beds24.f0daa6fe.png",
+    "static/media/bluehouse.ba211aa9.png": "/Melhem/static/media/bluehouse.ba211aa9.png",
     "static/media/crwn-clothing.e5399702.png": "/Melhem/static/media/crwn-clothing.e5399702.png",
     "static/media/logo.7dbc68fc.png": "/Melhem/static/media/logo.7dbc68fc.png",
     "static/media/logo2.f2c49007.png": "/Melhem/static/media/logo2.f2c49007.png",
@@ -28,6 +30,6 @@
     "static/js/runtime-main.4263e912.js",
     "static/js/2.cea56041.chunk.js",
     "static/css/main.8facefe0.chunk.css",
-    "static/js/main.26291d5f.chunk.js"
+    "static/js/main.3a960336.chunk.js"
   ]
 }
