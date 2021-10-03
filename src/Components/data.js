@@ -88,7 +88,7 @@ export const projects=[
     projectName:"Smart Brain",
     link:"https://melhemdirani.github.io/smart-brain/",
     link2:"https://github.com/melhemdirani/smart-brain/tree/main",
-    description:"A website that uses Clarifi API to detect a face on a given image. All the user has to do is add a link for a photo and the application will draw a box around a detected face in the photo. Built with React.Js, Redux and Tachyons"
+    description:"A website that uses Clarifi API to detect a face on a given image. Built with React.Js, Redux and Tachyons. The backend is built with Node.JS and PostgreSQL. The front end part is deployed on github while the backend is deployed on heroku."
   },
   {
     id: 11,

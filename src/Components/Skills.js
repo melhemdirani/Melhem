@@ -1,5 +1,6 @@
 import React from 'react'
 import { makeStyles } from "@material-ui/core";
+import bullet from '../images/bullet.png'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -31,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
     skillsSetStyle:{
         display: "grid",
         gridTemplateColumns: "auto auto auto",
+        listStyleImage: `url(${bullet})`,
         gridColumnGap: "200px",
         [theme.breakpoints.down('xs')]:{
             gridTemplateColumns: "auto auto",
