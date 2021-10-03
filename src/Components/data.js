@@ -4,6 +4,8 @@ import Smartbrain from '../images/Smartbrain.jpg'
 import Adventure from '../images/Adventure.png'
 import Restaurant from '../images/Restaurant.png'
 import crwnClothing from '../images/crwn-clothing.png'
+import bluehouse from '../images/bluehouse.png'
+import beds24 from '../images/beds24.png'
 
 
 export const coursesTaken=[
@@ -75,12 +77,26 @@ export const experience=[
 ]
 export const projects=[
   {
+    id: 15,
+    image: bluehouse,
+    projectName:"Blue House",
+    link:"https://bluehouse.is/",
+    description:"An E-Commerce website which I helped building during my internship with Sicilia Mia. The website was built using React, Redux, Firestore, Material-UI and other React Libaries."
+  },
+  {
     id: 9,
     image: crwnClothing,
     projectName:"Crwn Clothing",
     link:"https://melhemdirani.github.io/crwn-clothing/",
     link2:"https://github.com/melhemdirani/crwn-clothing",
     description:"An E-Commerce demo website built with react, redux, Sass and firebase. The website allows the user to sign in via google or to register manually. The user can add items to cart while shopping and pay using stripe checkout."
+  },
+  {
+    id: 16,
+    image: beds24,
+    projectName:"Blue House Booking",
+    link:"https://bluehouse.is/beds24",
+    description:"A booking website which is part of the bluehouse website which I helped building during my internship with Sicilia Mia.  The website includes API calls to check for availabilty and info about the blue house rooms. The user can book a room and pay online using stripe, paypal, bitcoin and bank transfer."
   },
   {
     id: 10,
@@ -123,5 +139,6 @@ export const projects=[
     link2:"https://github.com/melhemdirani/robofriends/tree/main",
     description:"A fun project that was part of my lesson plan with Zero To Mastery Academy built with React.js"
   }
+
 
 ]    

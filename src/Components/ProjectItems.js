@@ -157,8 +157,8 @@ function ProjectItems({image,projectName,link,link2, description}) {
                 <a href={link}><img className={clsx(projectimg2, projectimg)} src={image} alt={projectName}/> </a>
                 <p className={project_description}>{description}</p>
                 <div className={links}>
-                    <a className={link_a}  href={link} target="_blank" rel="noreferrer"> View Live </a>
-                    <a className={link_b} href={link2} target="_blank" rel="noreferrer"> Source Code </a>
+                    <a className={link_a} href={link} target="_blank" rel="noopener noreferrer"> View Live </a>
+                    {link2 && <a className={link_b} href={link2} target="_blank" rel="noopener noreferrer"> Source Code </a>}
                 </div>  
             </div>  
             <a href={link} className={imageContainer}><img className={clsx(projectimg1, projectimg)} src={image} alt={projectName}/> </a>
