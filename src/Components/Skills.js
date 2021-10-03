@@ -66,7 +66,7 @@ const LanguagesSet = ['JavaScript', 'HTML5', 'CSS']
 const LibrariesSet = ['React', 'Node.js', 'Material-UI', 'SASS', 'TailWind CSS']
 const Framework = ['Redux', 'GraphQl', 'Apollo', 'Express', 'Context API']
 const Tools = ['Visual Studio Code', 'WordPress', 'GitHub', 'Sublime Text 3']
-const Storage = ['Firebase']
+const Storage = ['Firebase', 'PostgreSQL']
 const Methodologies = ['Agile Development', 'REST API', 'Unit Testing'] 
 
 const SkillSet = ({mappedItem, type}) => {
