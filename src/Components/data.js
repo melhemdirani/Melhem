@@ -96,7 +96,7 @@ export const projects=[
     image: beds24,
     projectName:"Blue House Booking",
     link:"https://bluehouse.is/beds24",
-    description:"A booking website which is part of the bluehouse website which I helped building during my internship with Sicilia Mia.  The website includes API calls to check for availabilty and info about the blue house rooms. The user can book a room and pay online using stripe, paypal, bitcoin and bank transfer."
+    description:"A booking website which is part of the bluehouse website which I helped building during my internship with Sicilia Mia.  The website includes API calls to check for availabilty and info about the blue house rooms. The user can book a room and pay online using stripe, paypal, bitcoin and bank transfer. Note that this section of the website is still in testing mode."
   },
   {
     id: 10,
