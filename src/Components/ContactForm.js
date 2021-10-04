@@ -95,7 +95,6 @@ const useStyles = makeStyles((theme) => ({
     },
     text:{
         width: "500px",
-        fontSize: "18px",
     },
     [theme.breakpoints.down('1130')]:{
         title: {
@@ -124,8 +123,6 @@ const useStyles = makeStyles((theme) => ({
         },
         text:{
            marginTop: "30px",
-           fontSize: "14px",
-
         },
     },
     [theme.breakpoints.down('xs')]: {
@@ -156,7 +153,6 @@ const useStyles = makeStyles((theme) => ({
             width: '270px'
         },
         text:{
-            fontSize: "12px",
             width: '270px'
         },
         image:{
@@ -259,7 +255,7 @@ const ContactForm = () =>{
 
             <div className={second_row}>
                 <div className={first_column}>
-                <p className={text}>Interested in working together? Or perhaps you would just like to say hi ; leave a message bellow.</p>
+                <p className={clsx(text, "text")}>Interested in working together? Or perhaps you would just like to say hi ; leave a message bellow.</p>
 
                     <form onSubmit={handleSubmit} className={contactForm}>
                         <label id="name-label" className={clsx(styling, labels)} > Name </label> 

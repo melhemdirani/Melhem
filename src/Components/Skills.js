@@ -1,6 +1,7 @@
 import React from 'react'
 import { makeStyles } from "@material-ui/core";
 import bullet from '../images/bullet.png'
+import clsx from 'clsx';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -23,12 +24,6 @@ const useStyles = makeStyles((theme) => ({
             fontSize: '14px',
         }, 
     },
-    text: {
-        fontSize: '15px',
-        [theme.breakpoints.down('xs')]:{
-            fontSize: '12px',
-        }, 
-    },
     skillsSetStyle:{
         display: "grid",
         gridTemplateColumns: "auto auto auto",
@@ -41,17 +36,13 @@ const useStyles = makeStyles((theme) => ({
     },
     description: {
         width: "60vw", 
-        fontSize: '15px',
         [theme.breakpoints.down('xs')]:{
-            fontSize: '12px',
             width: "auto", 
-
         }, 
     },
     container: {
         margin: "auto",
         width: "80vw",
-        color: "rgba(0,0,0,0.7)",
         marginBottom: "50px"
     },
       ["@media only screen and (max-width: 850px) and (max-height: 550px) "]:{
@@ -70,12 +61,12 @@ const Storage = ['Firebase', 'PostgreSQL']
 const Methodologies = ['Agile Development', 'REST API', 'Unit Testing'] 
 
 const SkillSet = ({mappedItem, type}) => {
-    const { subTitle, text} = useStyles()
+    const { subTitle } = useStyles()
 
     return(
         <div>
             <p className={subTitle}>{type}</p>
-               {mappedItem.map((item,i)=> <li className={text} key={i}>{item}</li>)}
+               {mappedItem.map((item,i)=> <li className="text" key={i}>{item}</li>)}
         </div>
     )
 
@@ -88,7 +79,7 @@ function Skills() {
   return (
     <div className={container}>
       <h1 className={title}>My Skills</h1>
-      <p className={description}>Through my studies, I've gained a solid understanding of computer science and web development concepts, and have dedicated a lot of my free time to apply these concepts to real-world scenarios and applications.</p>
+      <p className={clsx(description, "text")}>Through my studies, I've gained a solid understanding of computer science and web development concepts, and have dedicated a lot of my free time to apply these concepts to real-world scenarios and applications.</p>
     <div className={skillsSetStyle}>
         <SkillSet mappedItem={LanguagesSet} type="Languages"/>
         <SkillSet mappedItem={LibrariesSet} type="Libraries/Api"/>

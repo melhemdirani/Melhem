@@ -28,13 +28,13 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     project_description:{
-        fontSize: "20px",
         width:"350px",
         marginRight: "50px"
     },
  
     Name:{
         fontSize: "25px",
+        color: "black"
     },
     links:{
         display: "flex"
@@ -76,7 +76,6 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('1250')]: {
         project_description:{
             width:"250px",
-            fontSize: "18px",
             marginRight: "20px"
         },
         projectimg:{
@@ -114,7 +113,6 @@ const useStyles = makeStyles((theme) => ({
             fontSize: "13px",
         },
         project_description:{
-            fontSize: "10px",
             width: "300px",
             textAlign: "justify"
         },
@@ -157,7 +155,7 @@ function ProjectItems({image,projectName,link,link2, description}) {
                 <a href={link} target="_blank" rel="noopener noreferrer">
                     <img className={clsx(projectimg2, projectimg)} src={image} alt={projectName}/> 
                 </a>
-                <p className={project_description}>{description}</p>
+                <p className={clsx(project_description, "text")}>{description}</p>
                 <div className={links}>
                     <a className={link_a} href={link} target="_blank" rel="noopener noreferrer"> View Live </a>
                     {link2 && <a className={link_b} href={link2} target="_blank" rel="noopener noreferrer"> Source Code </a>}

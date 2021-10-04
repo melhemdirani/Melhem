@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
         color: "rgb(102, 101, 101)",
         '&:hover': {
             transform: "scale(1.2)",
-            color: "teal"
+            color: "teal !important"
         },
     }, 
     icon2:{
@@ -49,6 +49,7 @@ const useStyles = makeStyles((theme) => ({
     },
     subTitle:{
         fontSize: "25px",
+        color: "black"
     },
     contactInfo:{
         color: "black",
