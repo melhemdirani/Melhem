@@ -36,11 +36,9 @@ const useStyles = makeStyles((theme) => ({
         right: "35px",
     },
     menuItems:{
-        fontSize: "12px",
-        margin: "0px 55px 10px -10px",
-        paddingTop: "10px",
+        fontSize: "13px",
+        margin: "0px 55px 10px 0px",
         fontWeight: "900",
-        borderRadius: "20px",
     },
     menuItems_Mobile:{
         fontSize: "10px",

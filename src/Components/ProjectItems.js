@@ -154,17 +154,20 @@ function ProjectItems({image,projectName,link,link2, description}) {
         <div className={container}>
             <div className={Mobilecontainer}>
                 <h1 className={Name}>{projectName}</h1>
-                <a href={link}><img className={clsx(projectimg2, projectimg)} src={image} alt={projectName}/> </a>
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                    <img className={clsx(projectimg2, projectimg)} src={image} alt={projectName}/> 
+                </a>
                 <p className={project_description}>{description}</p>
                 <div className={links}>
                     <a className={link_a} href={link} target="_blank" rel="noopener noreferrer"> View Live </a>
                     {link2 && <a className={link_b} href={link2} target="_blank" rel="noopener noreferrer"> Source Code </a>}
                 </div>  
             </div>  
-            <a href={link} className={imageContainer}><img className={clsx(projectimg1, projectimg)} src={image} alt={projectName}/> </a>
+            <a href={link} className={imageContainer}>
+                <img className={clsx(projectimg1, projectimg)} src={image} alt={projectName}/> 
+            </a>
         </div>
     )
-
 } 
 
 export default ProjectItems
