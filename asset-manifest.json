@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Melhem/static/css/main.8a11d766.chunk.css",
-    "main.js": "/Melhem/static/js/main.d3901190.chunk.js",
-    "main.js.map": "/Melhem/static/js/main.d3901190.chunk.js.map",
+    "main.css": "/Melhem/static/css/main.3277b003.chunk.css",
+    "main.js": "/Melhem/static/js/main.c4364a56.chunk.js",
+    "main.js.map": "/Melhem/static/js/main.c4364a56.chunk.js.map",
     "runtime-main.js": "/Melhem/static/js/runtime-main.4263e912.js",
     "runtime-main.js.map": "/Melhem/static/js/runtime-main.4263e912.js.map",
     "static/js/2.cea56041.chunk.js": "/Melhem/static/js/2.cea56041.chunk.js",
     "static/js/2.cea56041.chunk.js.map": "/Melhem/static/js/2.cea56041.chunk.js.map",
     "index.html": "/Melhem/index.html",
-    "static/css/main.8a11d766.chunk.css.map": "/Melhem/static/css/main.8a11d766.chunk.css.map",
+    "static/css/main.3277b003.chunk.css.map": "/Melhem/static/css/main.3277b003.chunk.css.map",
     "static/js/2.cea56041.chunk.js.LICENSE.txt": "/Melhem/static/js/2.cea56041.chunk.js.LICENSE.txt",
     "static/media/Adventure.539a30b4.png": "/Melhem/static/media/Adventure.539a30b4.png",
     "static/media/Linkedin.8d252ee3.png": "/Melhem/static/media/Linkedin.8d252ee3.png",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.4263e912.js",
     "static/js/2.cea56041.chunk.js",
-    "static/css/main.8a11d766.chunk.css",
-    "static/js/main.d3901190.chunk.js"
+    "static/css/main.3277b003.chunk.css",
+    "static/js/main.c4364a56.chunk.js"
   ]
 }
