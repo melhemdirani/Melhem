@@ -29,9 +29,9 @@ const useStyles = makeStyles((theme) => ({
         gridTemplateColumns: "auto auto auto",
         listStyleImage: `url(${bullet})`,
         gridColumnGap: "200px",
-        [theme.breakpoints.down('xs')]:{
+        [theme.breakpoints.down('830')]:{
             gridTemplateColumns: "auto auto",
-            gridColumnGap: "50px",
+            gridColumnGap: "12px",
         }, 
     },
     description: {
@@ -66,7 +66,7 @@ const SkillSet = ({mappedItem, type}) => {
     return(
         <div>
             <p className={subTitle}>{type}</p>
-               {mappedItem.map((item,i)=> <li className="text" key={i}>{item}</li>)}
+               {mappedItem.map((item,i)=> <li className="subtext" key={i}>{item}</li>)}
         </div>
     )
 

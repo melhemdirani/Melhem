@@ -59,15 +59,11 @@ const useStyles = makeStyles((theme) => ({
         about: {
             columnGap: '40px',
             flexDirection: "column",
-
         },
   
     },
     [theme.breakpoints.down('900')]: {
         about:{
-        },
-        text1: {
-            width: "150px"
         },
         profilepic: {
             height: "600px",
@@ -92,8 +88,6 @@ const useStyles = makeStyles((theme) => ({
         },
         about: {
             columnGap: '20px',
-            paddingRight: "30px",
-            
         },
     },
     [theme.breakpoints.down('440')]:{
@@ -125,13 +119,13 @@ const useStyles = makeStyles((theme) => ({
 
 function About() {
 
-    const { about,profilepic,aboutme,skills,text1, button, flex2} = useStyles()
+    const { about,profilepic,aboutme,skills, button, flex2} = useStyles()
     return (
  
         <div className={about} id="about">
             <img className={profilepic} src={ProfilePic} alt="Melhem" />
             <div  className={aboutme}>  
-                <h1 className={clsx(text1, "title")} >ABOUT ME</h1>
+                <h1 className="title" >ABOUT ME</h1>
                 <p className="text">I’m a self-taught web developer who is so passionate about coding that he quitted his job and dived into the IT field without any hesitation. </p>
                 <p className="text"> My journey began after I stumbled upon a course called the complete web developer zero to mastery offered by Zero to Mastery Academy. After I started my first course, I couldn’t stop coding and learning. One course led to another and here I am.  </p>
                 <p className="text"> About one year after I started learning web development, I was given the opportunity to do a remote Internship with a company called Sicilia Mia based in Sicily, Italy. During my internship, I've worked alongside senior designers and developers who have raised my standards for what’s expected of any web applications. Moreover, I am an active member on a team on Slack where we build web application to gain experience and grow in this field. Finally, I also work as a tutor and mentor where I teach web development and guide new students in their journey.  </p>
