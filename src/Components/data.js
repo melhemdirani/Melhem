@@ -5,7 +5,9 @@ import Adventure from '../images/Adventure.png'
 import Restaurant from '../images/Restaurant.png'
 import crwnClothing from '../images/crwn-clothing.png'
 import bluehouse from '../images/bluehouse.png'
+import reboost from '../images/reboost.png'
 import beds24 from '../images/beds24.png'
+import lsdlab from '../images/lsdlab.png'
 
 
 export const coursesTaken=[
@@ -76,6 +78,20 @@ export const experience=[
 
 ]
 export const projects=[
+  {
+    id: 18,
+    image: lsdlab,
+    projectName:"Lsd Lab NFT",
+    link:"https://lsdlab.io/",
+    description:"Portfolio for Lsd Lab NFT agency. Built with javascript and react framework."
+  },
+  {
+    id: 17,
+    image: reboost,
+    projectName:"Reboost",
+    link:"https://reboost.live/",
+    description:"Portfolio for Reboost agency. Built with javascript and react framework."
+  },
   {
     id: 15,
     image: bluehouse,

@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         height: "50px",
         marginTop: "0",
-        justifyContent: "center",
+        justifyContent: "space-around",
         alignItems: "center",
         position: "fixed",
         fontWeight: "900",
@@ -83,29 +83,16 @@ const useStyles = makeStyles((theme) => ({
         color: "rgb(93,174,190)"
     },
     headerLogo:{
-        height: "40px",
-        marginRight: "200px",
-    },
-    [theme.breakpoints.down('1033')]: {
-        headerLogo:{
-            marginRight: "100px",
-        },
+        height: '40px'
     },
     [theme.breakpoints.down('769')]: {
-        headerLogo:{
-            marginRight: "40px",
-        },
         menuItems:{
             margin: "0px 35px 10px -10px"
         },
    
     },
     [theme.breakpoints.down('xs')]: {
-        headerLogo:{
-            marginLeft: "-50px",
-            height: "30px",
-            marginTop:" 50px",
-        },
+
     },
     [theme.breakpoints.down('321')]:{
 
@@ -170,9 +157,15 @@ function Navbar() {
 
         return (
             <div  className={styles}>
-                <a  href="#header" > <img src={colorChange && width > 600 ? logo : logo2} alt="" className={headerLogo}/> </a>
+                <a  href="#header" >
+                    <img alt="" src={colorChange ? logo : logo2} className={headerLogo}/>
+                </a>
                 {width < 600 ? <hr /> : null}
-                <Scrollspy items={ ['header', 'about','projects','contact'] } currentClassName={`${sectionChange}`}  className="scrollspy" >
+                <Scrollspy 
+                    items={ ['header', 'about','projects','contact'] } 
+                    currentClassName={`${sectionChange}`}  
+                    className="scrollspy" 
+                >
                     <a style={{display: "none"}} href="#header">home </a>   
                     <a className={itemsStyles} href="#about">About</a>
                     <a className={itemsStyles} href="#projects">Projects</a>
@@ -187,9 +180,25 @@ function Navbar() {
     <div onClick={closeMenu}  >
         { open === true && <NavBars styles={mobile_nav} itemsStyles={menuItems_Mobile}/> }   
         <div className={menuButton} onClick={toggleMenu} >
-            {open ? <ClearIcon className={ menuIcon}/> : <MenuIcon className={colorChange ? clsx(menuIcon_change, menuIcon) : menuIcon}/>}   
+            {   open 
+                ? <ClearIcon className={ menuIcon}/> 
+                : <MenuIcon className={colorChange 
+                ? clsx(menuIcon_change, menuIcon) : menuIcon}
+                />
+            }   
         </div>
-        <NavBars styles={colorChange  ? clsx(nav_background, header_nav) : header_nav} itemsStyles={colorChange ? clsx(nav_change, menuItems) : menuItems}/>
+        <NavBars 
+            styles={
+                colorChange  
+                ? clsx(nav_background, header_nav) 
+                : header_nav /* Change the code here */
+            } 
+            itemsStyles={
+                colorChange 
+                ? clsx(nav_change, menuItems) 
+                : menuItems /* Change the code here */
+            }
+        />
     </div>
     )
 }
