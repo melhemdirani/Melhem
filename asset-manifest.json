@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Melhem/static/css/main.3277b003.chunk.css",
-    "main.js": "/Melhem/static/js/main.d2cca604.chunk.js",
-    "main.js.map": "/Melhem/static/js/main.d2cca604.chunk.js.map",
+    "main.js": "/Melhem/static/js/main.e724fd21.chunk.js",
+    "main.js.map": "/Melhem/static/js/main.e724fd21.chunk.js.map",
     "runtime-main.js": "/Melhem/static/js/runtime-main.4263e912.js",
     "runtime-main.js.map": "/Melhem/static/js/runtime-main.4263e912.js.map",
     "static/js/2.cea56041.chunk.js": "/Melhem/static/js/2.cea56041.chunk.js",
@@ -23,6 +23,7 @@
     "static/media/crwn-clothing.e5399702.png": "/Melhem/static/media/crwn-clothing.e5399702.png",
     "static/media/logo.7dbc68fc.png": "/Melhem/static/media/logo.7dbc68fc.png",
     "static/media/logo2.f2c49007.png": "/Melhem/static/media/logo2.f2c49007.png",
+    "static/media/lsdlab.7b13bdb6.png": "/Melhem/static/media/lsdlab.7b13bdb6.png",
     "static/media/message.ff84dc0e.jpg": "/Melhem/static/media/message.ff84dc0e.jpg",
     "static/media/reboost.3ccee493.png": "/Melhem/static/media/reboost.3ccee493.png",
     "static/media/robofriends.8a12a4cd.jpg": "/Melhem/static/media/robofriends.8a12a4cd.jpg"
@@ -31,6 +32,6 @@
     "static/js/runtime-main.4263e912.js",
     "static/js/2.cea56041.chunk.js",
     "static/css/main.3277b003.chunk.css",
-    "static/js/main.d2cca604.chunk.js"
+    "static/js/main.e724fd21.chunk.js"
   ]
 }
