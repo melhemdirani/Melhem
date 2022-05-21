@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core";
 import clsx from 'clsx';
 import MenuIcon from '@material-ui/icons/Menu';
 import useWindowDimensions from './windowDimensions'
-import Scrollspy from 'react-scrollspy'
 import logo from "../images/logo.png"
 import logo2 from "../images/logo2.png"
 import ClearIcon from '@material-ui/icons/Clear';
@@ -12,8 +11,9 @@ const useStyles = makeStyles((theme) => ({
 
     header_nav:{
         display: "flex",
-        height: "50px",
+        height: "80px",
         marginTop: "0",
+        color: "white",
         justifyContent: "space-around",
         alignItems: "center",
         position: "fixed",
@@ -24,29 +24,34 @@ const useStyles = makeStyles((theme) => ({
             display:"none",
         },
     },
+    links:{
+        display: 'flex',
+        alignItems: 'center',
+        [theme.breakpoints.down('xs')]: {
+            flexDirection:"column",
+        },
+    },
     mobile_nav:{
         display: "flex",
-        width: "50%",
+        width: "60%",
         flexDirection: "column",
-        marginTop: "0px",
-        marginRight:"-50px",
+        marginTop: "50px",
+        marginRight:"0px",
         position: "fixed",
         alignItems:"center",
         backgroundColor: "rgba(0,0,0,0.9)",
         right: "35px",
     },
     menuItems:{
-        fontSize: "13px",
+        fontSize: "18px",
         margin: "0px 55px 10px 0px",
         fontWeight: "900",
     },
     menuItems_Mobile:{
-        fontSize: "10px",
+        fontSize: "14px",
         fontWeight: "700",
         color: "white",
-        marginBottom: "20px",
-        padding: "10px",
-        marginRight: "100px"
+        margin: "20px 0",
     },
     menuIcon:{
         margin:"14px",
@@ -83,7 +88,7 @@ const useStyles = makeStyles((theme) => ({
         color: "rgb(93,174,190)"
     },
     headerLogo:{
-        height: '40px'
+        height: '50px'
     },
     [theme.breakpoints.down('769')]: {
         menuItems:{
@@ -92,6 +97,10 @@ const useStyles = makeStyles((theme) => ({
    
     },
     [theme.breakpoints.down('xs')]: {
+        headerLogo:{
+            height: '40px',
+            margin: '10px 0'
+        },
 
     },
     [theme.breakpoints.down('321')]:{
@@ -149,28 +158,24 @@ function Navbar() {
         nav_background,
         nav_change,
         menuIcon_change, 
-        sectionChange,
+        links,
         headerLogo
     } = useStyles()
    
     const NavBars = ({styles, itemsStyles}) => {
 
         return (
-            <div  className={styles}>
-                <a  href="#header" >
+            <div  className={styles} >
+                <a  href="#header">
                     <img alt="" src={colorChange ? logo : logo2} className={headerLogo}/>
                 </a>
                 {width < 600 ? <hr /> : null}
-                <Scrollspy 
-                    items={ ['header', 'about','projects','contact'] } 
-                    currentClassName={`${sectionChange}`}  
-                    className="scrollspy" 
-                >
+                <div className={links}>
                     <a style={{display: "none"}} href="#header">home </a>   
                     <a className={itemsStyles} href="#about">About</a>
                     <a className={itemsStyles} href="#projects">Projects</a>
                     <a className={itemsStyles} href="#contact">Contact</a>
-                </Scrollspy>
+                </div>
             </div>
         )
     }

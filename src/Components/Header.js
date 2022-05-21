@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         flexDirection: "column",
         alignItems: "space-between",
-        marginBottom: "-21px",
         backgroundImage: `linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),  url(${background})`,
         backgroundBlendMode: "darken",
         backgroundAttachment: "fixed",
@@ -41,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: "600",
         fontSize: "25px", 
         marginBottom: "100px",
-        marginTop: "5px"
+        marginTop: "-10px"
         
     },
     button:{

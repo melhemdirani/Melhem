@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
         boxShadow: "0 2px 2px gray",
         width:"800px",
         '&:hover': {
-            transform: "scale(1.1)",
+            transform: "scale(1.03)",
             WebkitTransition: "transform 1s ease-in-out"
         },
     },

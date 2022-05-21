@@ -1,5 +1,6 @@
 import React  from 'react';
 import ProfilePic from '../images/ProfilePic.png';
+import wave from '../images/wave.webp';
 import { makeStyles } from "@material-ui/core";
 import clsx from 'clsx';
 import resume from "../Resume.pdf"
@@ -13,7 +14,8 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         alignItems: 'center',
         padding: '60px',
-        backgroundColor: "white"
+        paddingBottom: 0,
+        marginBottom: '50px',
     },
     flex2:{
         display: "flex",
@@ -129,6 +131,7 @@ function About() {
                 <p className="text">I’m a self-taught web developer who is so passionate about coding that he quitted his job and dived into the IT field without any hesitation. </p>
                 <p className="text"> My journey began after I stumbled upon a course called the complete web developer zero to mastery offered by Zero to Mastery Academy. After I started my first course, I couldn’t stop coding and learning. One course led to another and here I am.  </p>
                 <p className="text"> About one year after I started learning web development, I was given the opportunity to do a remote Internship with a company called Sicilia Mia based in Sicily, Italy. During my internship, I've worked alongside senior designers and developers who have raised my standards for what’s expected of any web applications.</p>
+                <p  className="text">Having always dreamt of starting my own business, alongside the skills and experience I gained in the field of web development, I launched a digital agency startup called <a href='https://reboost.live/' target="_blank" rel="noopener noreferrer">Reboost</a>. One of the core missions of Reboost is to help fresh starters and career changers by providing trainings, courses and real-life experience in the fields of web development, mobile app development, digital marketing, copywriting, web designing and graphic designing.</p>
                 <div className={skills}>
                     <div className={flex2}>
                         <a className="secondary_button" href="#contact"> Hire Me</a>

@@ -29,16 +29,20 @@ const useStyles = makeStyles((theme) => ({
         color: "rgb(102, 101, 101)",
         '&:hover': {
             transform: "scale(1.2)",
-            color: "teal !important"
+            color: "teal !important",
+            WebkitTransition: "transform 1s ease-in-out"
+
         },
     }, 
     icon2:{
         height: "25px",
         width: "auto",
         color: "rgb(102, 101, 101)",
+        cursor: "pointer",
         '&:hover': {
             transform: "scale(1.2)",
-            color: "teal"
+            color: "teal",
+            WebkitTransition: "transform 1s ease-in-out"
         },
     },
     second_column:{
@@ -55,6 +59,15 @@ const useStyles = makeStyles((theme) => ({
         color: "black",
         marginLeft: "30px",
         fontSize: "16px"
+    },
+    contactInfo2:{
+        color: "black",
+        marginBottom: "10px",
+        fontSize: "16px",
+        cursor: "pointer",
+        '&:hover': {
+            color: "teal",
+        },
     },
     flexDisplay:{
         display: "flex",
@@ -103,10 +116,16 @@ const useStyles = makeStyles((theme) => ({
         contactInfo:{
             fontSize: "13px"
         },
+        contactInfo2:{
+            fontSize: "13px"
+        },
     },
     [theme.breakpoints.down('340')]:{
         subTitle:{
             fontSize: "12px",
+        },
+        contactInfo2:{
+            fontSize: "10px"
         },
         contactInfo:{
             fontSize: "10px"
@@ -116,7 +135,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 function Footer() {
-    const{footer,icon,icon2,second_column,subTitle,contactInfo,flexDisplay,column1,Copyright,footer_container,column1Icons} = useStyles()
+    const{footer,icon,icon2,second_column,subTitle,contactInfo2,contactInfo,flexDisplay,column1,Copyright,footer_container,column1Icons} = useStyles()
 
     return (
         <div className={footer_container}>
@@ -153,6 +172,18 @@ function Footer() {
                             <p className={contactInfo}> +(961)-71-523153</p>
                         </a>
                     </div>
+                    <div className={second_column}>
+                    <p className={subTitle}>Navigation</p>
+                    <a href="#header" className={contactInfo2} >
+                        Home
+                    </a>
+                    <a href="#projects" className={contactInfo2} >
+                        Projects
+                    </a>
+                    <a href="#contact" className={contactInfo2} >
+                        Contact
+                    </a>
+                </div>
             </div>
             <p className={Copyright}>Copyright ©2021 All rights reserved</p>
         </div>

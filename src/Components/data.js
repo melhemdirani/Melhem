@@ -8,6 +8,9 @@ import bluehouse from '../images/bluehouse.png'
 import reboost from '../images/reboost.png'
 import beds24 from '../images/beds24.png'
 import lsdlab from '../images/lsdlab.png'
+import bluvows from '../images/bluvows.png'
+import rayandates from '../images/rayandates.png'
+
 
 
 export const coursesTaken=[
@@ -91,6 +94,20 @@ export const projects=[
     projectName:"Reboost",
     link:"https://reboost.live/",
     description:"Portfolio for Reboost agency. Built with javascript and react framework."
+  },
+  {
+    id: 19,
+    image: bluvows,
+    projectName:"Bluvows",
+    link:"https://bluvows.com/cyprus/",
+    description:"Two landing pages for Bluvows website (Cyprus & Greece). Website developed using Wordpress and Elementor"
+  },
+  {
+    id: 20,
+    image: rayandates,
+    projectName:"Rayan Dates",
+    link:"https://rayandates.com/",
+    description:"Website for Rayan Dates Store. Website developed using Shopify"
   },
   {
     id: 15,

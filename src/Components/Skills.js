@@ -79,7 +79,7 @@ function Skills() {
   return (
     <div className={container}>
       <h1 className={title}>My Skills</h1>
-      <p className={clsx(description, "text")}>Through my studies, I've gained a solid understanding of computer science and web development concepts, and have dedicated a lot of my free time to apply these concepts to real-world scenarios and applications.</p>
+      <p className={clsx(description, "text")}>Through my studies and experience, I've gained a solid understanding of computer science and web development concepts, and have dedicated a lot of my free time to apply these concepts to real-world scenarios and applications.</p>
     <div className={skillsSetStyle}>
         <SkillSet mappedItem={LanguagesSet} type="Languages"/>
         <SkillSet mappedItem={LibrariesSet} type="Libraries/Api"/>
