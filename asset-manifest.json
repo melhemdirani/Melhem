@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Melhem/static/css/main.63399094.chunk.css",
-    "main.js": "/Melhem/static/js/main.47701963.chunk.js",
-    "main.js.map": "/Melhem/static/js/main.47701963.chunk.js.map",
+    "main.js": "/Melhem/static/js/main.5f2d0991.chunk.js",
+    "main.js.map": "/Melhem/static/js/main.5f2d0991.chunk.js.map",
     "runtime-main.js": "/Melhem/static/js/runtime-main.4263e912.js",
     "runtime-main.js.map": "/Melhem/static/js/runtime-main.4263e912.js.map",
     "static/js/2.aa85fbc6.chunk.js": "/Melhem/static/js/2.aa85fbc6.chunk.js",
@@ -11,6 +11,7 @@
     "static/css/main.63399094.chunk.css.map": "/Melhem/static/css/main.63399094.chunk.css.map",
     "static/js/2.aa85fbc6.chunk.js.LICENSE.txt": "/Melhem/static/js/2.aa85fbc6.chunk.js.LICENSE.txt",
     "static/media/Adventure.539a30b4.png": "/Melhem/static/media/Adventure.539a30b4.png",
+    "static/media/Danash.4a08adc4.webp": "/Melhem/static/media/Danash.4a08adc4.webp",
     "static/media/Linkedin.8d252ee3.png": "/Melhem/static/media/Linkedin.8d252ee3.png",
     "static/media/ProfilePic.10e4bbed.png": "/Melhem/static/media/ProfilePic.10e4bbed.png",
     "static/media/Restaurant.a4e8642d.png": "/Melhem/static/media/Restaurant.a4e8642d.png",
@@ -35,6 +36,6 @@
     "static/js/runtime-main.4263e912.js",
     "static/js/2.aa85fbc6.chunk.js",
     "static/css/main.63399094.chunk.css",
-    "static/js/main.47701963.chunk.js"
+    "static/js/main.5f2d0991.chunk.js"
   ]
 }
