@@ -1,177 +1,209 @@
-import robofriends from '../images/robofriends.jpg'
-import Linkedin from '../images/Linkedin.png'
-import Smartbrain from '../images/Smartbrain.jpg'
-import Adventure from '../images/Adventure.png'
-import Restaurant from '../images/Restaurant.png'
-import crwnClothing from '../images/crwn-clothing.png'
-import bluehouse from '../images/bluehouse.png'
-import reboost from '../images/reboost.png'
-import beds24 from '../images/beds24.png'
-import lsdlab from '../images/lsdlab.png'
-import bluvows from '../images/bluvows.png'
-import rayandates from '../images/rayandates.png'
+import robofriends from "../images/robofriends.jpg";
+import Linkedin from "../images/Linkedin.png";
+import Smartbrain from "../images/Smartbrain.jpg";
+import Adventure from "../images/Adventure.png";
+import Restaurant from "../images/Restaurant.png";
+import crwnClothing from "../images/crwn-clothing.png";
+import bluehouse from "../images/bluehouse.png";
+import reboost from "../images/reboost.png";
+import beds24 from "../images/beds24.png";
+import lsdlab from "../images/lsdlab.png";
+import bluvows from "../images/bluvows.png";
+import educify from "../images/educify.png";
+import mawahib from "../images/mawahib.png";
+import baitbaitk from "../images/baitbaitk.png";
+import rayandates from "../images/rayandates.png";
 
-
-
-export const coursesTaken=[
-    {   
-        id: 1,
-        Name: "The Complete Web Developer: Zero to Mastery",
-        yearEnd:"2020",
-        place:"Zero to Mastery",
-        website:"https://academy.zerotomastery.io/p/complete-web-developer-zero-to-mastery",
-      },
-      {
-        id: 2,
-        Name: "Responsive Web Design",
-        yearEnd:    "2021",
-        place:"Free Code Camp",
-        website:"https://www.freecodecamp.org/",
-      },
-      {
-        id: 3,
-        Name: "Front-End Web Development with React",
-        yearEnd:"2021",
-        place:"Coursera",
-        website:"https://www.coursera.org/learn/front-end-react/",
-      },
-      {
-        id: 4,
-        Name: "Complete React Developer in 2021",
-        yearEnd:"2021",
-        place:"Zero to Mastery",
-        website:"https://academy.zerotomastery.io/p/complete-react-developer-redux-hooks-graphql-zero-to-mastery",
-      },
-      
-]
-export const experience=[
-    {   
-        id: 5,
-        Name: "Intern Frontend Web Developer",
-        yearStart:"2021",
-        yearEnd:"present",
-        place:"Sicilia Mia,",
-        locations:"Sicily – Italy (remote)",
-
-      },
-      {
-        id: 6,
-        Name: "Math & English Teacher",
-        yearStart:"2019",
-        yearEnd:"2021",
-        place:"Fratelli Organization,",
-        locations:"Rmaileh - Lebanon",
-      },
-      {
-        id: 7,
-        Name: "Volunteer",
-        yearStart:"2017",
-        yearEnd:"present",
-        place:"Fighters for Peace,",
-        locations:"Beirut - Lebanon",
-      },
-      {
-        id: 8,
-        Name: "Camping and Hiking Event organizer",
-        yearStart:"2017",
-        yearEnd:"2019",
-        place:"StoneAge,",
-        locations:"Lebanon",
-      },
-
-]
-export const projects=[
+export const coursesTaken = [
+  {
+    id: 1,
+    Name: "The Complete Web Developer: Zero to Mastery",
+    yearEnd: "2020",
+    place: "Zero to Mastery",
+    website:
+      "https://academy.zerotomastery.io/p/complete-web-developer-zero-to-mastery",
+  },
+  {
+    id: 2,
+    Name: "Responsive Web Design",
+    yearEnd: "2021",
+    place: "Free Code Camp",
+    website: "https://www.freecodecamp.org/",
+  },
+  {
+    id: 3,
+    Name: "Front-End Web Development with React",
+    yearEnd: "2021",
+    place: "Coursera",
+    website: "https://www.coursera.org/learn/front-end-react/",
+  },
+  {
+    id: 4,
+    Name: "Complete React Developer in 2021",
+    yearEnd: "2021",
+    place: "Zero to Mastery",
+    website:
+      "https://academy.zerotomastery.io/p/complete-react-developer-redux-hooks-graphql-zero-to-mastery",
+  },
+];
+export const experience = [
+  {
+    id: 5,
+    Name: "Intern Frontend Web Developer",
+    yearStart: "2021",
+    yearEnd: "present",
+    place: "Sicilia Mia,",
+    locations: "Sicily – Italy (remote)",
+  },
+  {
+    id: 6,
+    Name: "Math & English Teacher",
+    yearStart: "2019",
+    yearEnd: "2021",
+    place: "Fratelli Organization,",
+    locations: "Rmaileh - Lebanon",
+  },
+  {
+    id: 7,
+    Name: "Volunteer",
+    yearStart: "2017",
+    yearEnd: "present",
+    place: "Fighters for Peace,",
+    locations: "Beirut - Lebanon",
+  },
+  {
+    id: 8,
+    Name: "Camping and Hiking Event organizer",
+    yearStart: "2017",
+    yearEnd: "2019",
+    place: "StoneAge,",
+    locations: "Lebanon",
+  },
+];
+export const projects = [
+  {
+    id: 19,
+    image: educify,
+    projectName: "Educify (On Going)",
+    link: "https://educify.reboost.live/",
+    description:
+      "As the project manager and full stack engineer lead for Educify, I oversaw the development of an online education platform that seamlessly connects students with tutors, courses, and group lessons. Utilizing a tech stack that includes React, Node, Express, JavaScript, Sass, Prisma, Redux toolkit, and PostgreSQL, we developed a comprehensive platform that features a payment and booking system, live online classes, and course streaming. Our design team used Figma to create an intuitive interface that makes it easy for students to find the right tutor and course, similar to preply.com.",
+  },
+  {
+    id: 20,
+    image: mawahib,
+    projectName: "Mawahib Mobile App",
+    description:
+      "As the project manager and full stack engineer lead, I worked on developing Mawahib, a platform that connects companies with professionals in the MENA region. Our team used React Native and NodeJS to build a mobile app that is both easy to use and visually appealing. We focused on creating an engaging user experience by optimizing user journeys for both job seekers and employers and introducing interactive touchpoints for engagement and sign-ups. The app's colorful design resonates with the brand's identity, making it a top choice for clients.",
+  },
+  {
+    id: 21,
+    image: baitbaitk,
+    projectName: "BaitBaitk Ecommerce Website",
+    link: "https://www.baitbaitk.com/",
+    description:
+      "As a project manager, me and my team developed and designed an ecommerce store using WordPress and the Elementor page builder. The store offers a wide range of products for customers to purchase, and I implemented Woocommerce to manage its functionality, including shipping management, tax calculation, and product reviews. To ensure the security of the website, I added the Sucuri security plugin, and leveraged WordPress' built-in SEO features to optimize it for search engines.",
+  },
   {
     id: 18,
     image: lsdlab,
-    projectName:"Lsd Lab NFT",
-    link:"https://lsdlab.io/",
-    description:"Portfolio for Lsd Lab NFT agency. Built with javascript and react framework."
+    projectName: "Lsd Lab NFT",
+    link: "https://lsdlab.io/",
+    description:
+      "Portfolio for Lsd Lab NFT agency. Built with javascript and react framework.",
   },
   {
     id: 17,
     image: reboost,
-    projectName:"Reboost",
-    link:"https://reboost.live/",
-    description:"Portfolio for Reboost agency. Built with javascript and react framework."
+    projectName: "Reboost",
+    link: "https://reboost.live/",
+    description:
+      "Portfolio for Reboost agency. Built with javascript and react framework.",
   },
   {
     id: 19,
     image: bluvows,
-    projectName:"Bluvows",
-    link:"https://bluvows.com/cyprus/",
-    description:"Two landing pages for Bluvows website (Cyprus & Greece). Website developed using Wordpress and Elementor"
+    projectName: "Bluvows",
+    link: "https://bluvows.com/cyprus/",
+    description:
+      "Two landing pages for Bluvows website (Cyprus & Greece). Website developed using Wordpress and Elementor",
   },
   {
     id: 20,
     image: rayandates,
-    projectName:"Rayan Dates",
-    link:"https://rayandates.com/",
-    description:"Website for Rayan Dates Store. Website developed using Shopify"
+    projectName: "Rayan Dates",
+    link: "https://rayandates.com/",
+    description:
+      "Website for Rayan Dates Store. Website developed using Shopify",
   },
   {
     id: 15,
     image: bluehouse,
-    projectName:"Blue House",
-    link:"https://bluehouse.is/",
-    description:"An E-Commerce website which I helped building during my internship with Sicilia Mia. The website was built using React, Redux, Firestore, Material-UI and other React Libaries."
+    projectName: "Blue House",
+    link: "https://bluehouse.is/",
+    description:
+      "An E-Commerce website which I helped building during my internship with Sicilia Mia. The website was built using React, Redux, Firestore, Material-UI and other React Libaries.",
   },
   {
     id: 9,
     image: crwnClothing,
-    projectName:"Crwn Clothing",
-    link:"https://melhemdirani.github.io/crwn-clothing/",
-    link2:"https://github.com/melhemdirani/crwn-clothing",
-    description:"An E-Commerce demo website built with react, redux, Sass and firebase. The website allows the user to sign in via google or to register manually. The user can add items to cart while shopping and pay using stripe checkout."
+    projectName: "Crwn Clothing",
+    link: "https://melhemdirani.github.io/crwn-clothing/",
+    link2: "https://github.com/melhemdirani/crwn-clothing",
+    description:
+      "An E-Commerce demo website built with react, redux, Sass and firebase. The website allows the user to sign in via google or to register manually. The user can add items to cart while shopping and pay using stripe checkout.",
   },
   {
     id: 16,
     image: beds24,
-    projectName:"Blue House Booking",
-    link:"https://bluehouse.is/beds24",
-    description:"A booking website which is part of the bluehouse website which I helped building during my internship with Sicilia Mia.  The website includes API calls to check for availabilty and info about the blue house rooms. The user can book a room and pay online using stripe, paypal, bitcoin and bank transfer. Note that this section of the website is still in testing mode."
+    projectName: "Blue House Booking",
+    link: "https://bluehouse.is/beds24",
+    description:
+      "A booking website which is part of the bluehouse website which I helped building during my internship with Sicilia Mia.  The website includes API calls to check for availabilty and info about the blue house rooms. The user can book a room and pay online using stripe, paypal, bitcoin and bank transfer. Note that this section of the website is still in testing mode.",
   },
   {
     id: 10,
     image: Smartbrain,
-    projectName:"Smart Brain",
-    link:"https://melhemdirani.github.io/smart-brain/",
-    link2:"https://github.com/melhemdirani/smart-brain/tree/main",
-    description:"A website that uses Clarifi API to detect a face on a given image. Built with React.Js, Redux and Tachyons. The backend is built with Node.JS and PostgreSQL. The front end part is deployed on github while the backend is deployed on heroku."
+    projectName: "Smart Brain",
+    link: "https://melhemdirani.github.io/smart-brain/",
+    link2: "https://github.com/melhemdirani/smart-brain/tree/main",
+    description:
+      "A website that uses Clarifi API to detect a face on a given image. Built with React.Js, Redux and Tachyons. The backend is built with Node.JS and PostgreSQL. The front end part is deployed on github while the backend is deployed on heroku.",
   },
   {
     id: 11,
     image: Restaurant,
     projectName: "Restaurant-Confusion",
-    link:"https://melhemdirani.github.io/Restaurant-Confusion/",
-    link2:"https://github.com/melhemdirani/Restaurant-Confusion/tree/master",
-    description:"A restaurant website built with React, Redux and Reactstrap. The website allows the user to browse through the dishes in the restaurant as well as view the rating for each dish.",
+    link: "https://melhemdirani.github.io/Restaurant-Confusion/",
+    link2: "https://github.com/melhemdirani/Restaurant-Confusion/tree/master",
+    description:
+      "A restaurant website built with React, Redux and Reactstrap. The website allows the user to browse through the dishes in the restaurant as well as view the rating for each dish.",
   },
   {
     id: 12,
     image: Linkedin,
     projectName: "Linkedin-Clone",
-    link:"https://melhemdirani.github.io/Linkedin-clone/",
-    link2:"https://github.com/melhemdirani/Linkedin-clone/tree/main",
-    description:"A Linkedin Demo clone that was built using React.js, Redux, Firebase and Material-UI. This demo allows the user to register or sign in to a registered account. After the user signs in he can view the posts section and add a post of his own.",
+    link: "https://melhemdirani.github.io/Linkedin-clone/",
+    link2: "https://github.com/melhemdirani/Linkedin-clone/tree/main",
+    description:
+      "A Linkedin Demo clone that was built using React.js, Redux, Firebase and Material-UI. This demo allows the user to register or sign in to a registered account. After the user signs in he can view the posts section and add a post of his own.",
   },
-  {   
+  {
     id: 13,
     image: Adventure,
     projectName: "Visit Lebanon",
-    link:"https://melhemdirani.github.io/Visit-Lebanon",
-    link2:"https://github.com/melhemdirani/visit-lebanon/tree/main",
-    description:"A demo website of a travel company that is promoting touristic places in Lebanon. Built using React ",
-
+    link: "https://melhemdirani.github.io/Visit-Lebanon",
+    link2: "https://github.com/melhemdirani/visit-lebanon/tree/main",
+    description:
+      "A demo website of a travel company that is promoting touristic places in Lebanon. Built using React ",
   },
   {
     id: 14,
     image: robofriends,
-    projectName:"RoboFriends",
-    link:"https://melhemdirani.github.io/robofriends",
-    link2:"https://github.com/melhemdirani/robofriends/tree/main",
-    description:"A fun project that was part of my lesson plan with Zero To Mastery Academy built with React.js"
-  }
-
-
-]    
+    projectName: "RoboFriends",
+    link: "https://melhemdirani.github.io/robofriends",
+    link2: "https://github.com/melhemdirani/robofriends/tree/main",
+    description:
+      "A fun project that was part of my lesson plan with Zero To Mastery Academy built with React.js",
+  },
+];
